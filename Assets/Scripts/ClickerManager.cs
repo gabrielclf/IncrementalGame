@@ -4,8 +4,8 @@ using DG.Tweening;
 
 public class ClickerManager : MonoBehaviour
 {
-    public static ClickerManager instance; //classe é singleton por conveniência
-    //Manager dos objetos clicáveis
+    public static ClickerManager instance; //classe Ã© singleton por conveniÃªncia
+    //Manager dos objetos clicÃ¡veis
 
     public GameObject MainGameCanvas;
     [SerializeField] private GameObject _upgradeCanvas;
@@ -62,7 +62,7 @@ public class ClickerManager : MonoBehaviour
     {
         GanharMoeda();
         
-        //Utilizando pacote externo DOTween para gerar a animação típica de "popup" do elemento ao ser clicado
+        //Utilizando pacote externo DOTween para gerar a animaÃ§Ã£o tÃ­pica de "popup" do elemento ao ser clicado
         _moeda.transform.DOBlendableScaleBy(new Vector3(0.05f,0.05f,0.05f),0.05f).OnComplete(MoedaScaleBack);
         _background.transform.DOBlendableScaleBy(new Vector3(0.05f,0.05f,0.05f),0.05f).OnComplete(BackgroundScaleBack);
     }

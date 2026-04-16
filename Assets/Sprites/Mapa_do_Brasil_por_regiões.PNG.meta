@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4c3f593b4c572484fb487c78ba31ef57
+guid: d828737f0c68c7d4f82196adf44e4d8e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -9137117592129561275
-    second: DOTweenIcon_0
+      213: -4888534240966466358
+    second: "Mapa_do_Brasil_por_regi\xF5es_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DOTweenIcon_0
+      name: "Mapa_do_Brasil_por_regi\xF5es_0"
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1
-        width: 91
-        height: 16
+        x: 0
+        y: 0
+        width: 1156
+        height: 1231
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54d1522e5ff623180800000000000000
-      internalID: -9137117592129561275
+      spriteID: ac42cd62200782cb0800000000000000
+      internalID: -4888534240966466358
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DOTweenIcon_0: -9137117592129561275
+      "Mapa_do_Brasil_por_regi\xF5es_0": -4888534240966466358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

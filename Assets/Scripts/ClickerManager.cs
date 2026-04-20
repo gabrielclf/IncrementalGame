@@ -63,17 +63,17 @@ public class ClickerManager : MonoBehaviour
         GanharMoeda();
         
         //Utilizando pacote externo DOTween para gerar a animaÃ§Ã£o tÃ­pica de "popup" do elemento ao ser clicado
-        _moeda.transform.DOBlendableScaleBy(new Vector3(0.05f,0.05f,0.05f),0.05f).OnComplete(MoedaScaleBack);
-        _background.transform.DOBlendableScaleBy(new Vector3(0.05f,0.05f,0.05f),0.05f).OnComplete(BackgroundScaleBack);
+        _moeda.transform.DOBlendableScaleBy(new Vector3(0.10f,0.10f,0.10f),0.10f).OnComplete(MoedaScaleBack);
+        _background.transform.DOBlendableScaleBy(new Vector3(0.03f,0.03f,0.03f),0.03f).OnComplete(BackgroundScaleBack);
     }
     //Metodos private para fazer a parte de "diminuir" a imagem do elemento clicado
     private void MoedaScaleBack()
     {
-        _moeda.transform.DOBlendableScaleBy(new Vector3(-0.05f,-0.05f,-0.05f),0.05f);
+        _moeda.transform.DOBlendableScaleBy(new Vector3(-0.10f,-0.10f,-0.10f),0.10f);
     }
     private void BackgroundScaleBack()
     {
-        _background.transform.DOBlendableScaleBy(new Vector3(-0.05f,-0.05f,-0.05f),0.05f);
+        _background.transform.DOBlendableScaleBy(new Vector3(-0.03f,-0.03f,-0.03f),0.03f);
     }
 
     public void GanharMoeda()
@@ -82,5 +82,21 @@ public class ClickerManager : MonoBehaviour
         AtualizarUIMoedas();
 
     }
+    #endregion
+
+    #region Apertar Botões 
+    //Controlando botões
+    public void ApertarBotaoUpgrade()
+    {
+        MainGameCanvas.SetActive(false);
+        _upgradeCanvas.SetActive(true);
+    }
+
+    public void ApertarBotaoVoltarJogo()
+    {
+        _upgradeCanvas.SetActive(false);
+        MainGameCanvas.SetActive(true);
+    }
+
     #endregion
 }

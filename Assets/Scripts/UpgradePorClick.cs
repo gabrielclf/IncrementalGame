@@ -1,16 +1,10 @@
 using UnityEngine;
 
-public class UpgradePorClick : MonoBehaviour
+[CreateAssetMenu(menuName ="UpgradePontos/Pontos por Click", fileName ="Pontos por Click")]
+public class UpgradePorClick : UpgradePontos
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public override void AplicarUpgrade()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        ClickerManager.instance.MoedasPorSeg_Upgrades += QuantidadeUpgrades;
     }
 }

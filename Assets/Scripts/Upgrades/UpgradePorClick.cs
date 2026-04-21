@@ -5,6 +5,6 @@ public class UpgradePorClick : UpgradePontos
 {
     public override void AplicarUpgrade()
     {
-        ClickerManager.instance.MoedasPorSeg_Upgrades += QuantidadeUpgrades;
+        ClickerManager.instance.PontosPorSeg_Upgrades += QuantidadeUpgrades;
     }
 }

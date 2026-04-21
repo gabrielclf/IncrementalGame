@@ -16,6 +16,7 @@ public class ClickerManager : MonoBehaviour
     [SerializeField] private GameObject _background;
 
     [Space]
+    public UpgradePontos[] up;
     [SerializeField] private GameObject _uiUpgrade;
     [SerializeField] private Transform _uiUpgradeTransform;
     public GameObject PontosPorSeg_Obj;
@@ -25,6 +26,8 @@ public class ClickerManager : MonoBehaviour
 
     //upgrades
     public double PontosPorSeg_Upgrades { get; set; }
+
+    private InicializarUpgrades _inicializarUpgrades;
 
     public void Awake()
     {
@@ -41,6 +44,9 @@ public class ClickerManager : MonoBehaviour
         //Atualizar contadores
         AtualizarUIPontos();
         AtualizarUIPontosPorSeg();
+
+        _inicializarUpgrades = GetComponent<InicializarUpgrades>();
+        _inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);
     }
 
     #region Atualizando UI

@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 73791029}
   - component: {fileID: 73791028}
   - component: {fileID: 73791031}
+  - component: {fileID: 73791032}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -256,6 +257,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &73791032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73791027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &364820371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,7 +1194,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1719148218}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2075924150}
+        m_TargetAssemblyTypeName: MainMenuAudioManage, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1719148218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1300,7 +1327,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1769139461}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2075924150}
+        m_TargetAssemblyTypeName: MainMenuAudioManage, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1769139461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1339,6 +1378,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769139458}
   m_CullTransparentMesh: 1
+--- !u!1 &2075924149
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2075924151}
+  - component: {fileID: 2075924150}
+  m_Layer: 0
+  m_Name: Main Menu Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2075924150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075924149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a38b1a38e60454c40830aefd93b04b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenuAudioManage
+  MainMenuMusic:
+    Guid:
+      Data1: 1283535292
+      Data2: 1123532857
+      Data3: -404957266
+      Data4: 626311105
+    Path: event:/OSTs/Tela Inicial
+  ButtonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
+  ButtonHoverSound:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  StartScreenAmbience:
+    Guid:
+      Data1: 255893597
+      Data2: 1149517485
+      Data3: -157788482
+      Data4: 445995978
+    Path: event:/Ambiences/StartScreen
+--- !u!4 &2075924151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075924149}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 640, y: 360, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2144735538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,7 +1532,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2144735541}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2075924150}
+        m_TargetAssemblyTypeName: MainMenuAudioManage, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2144735541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1466,3 +1589,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 73791030}
   - {fileID: 1356966945}
+  - {fileID: 2075924151}

@@ -1517,6 +1517,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1906816894}
+        m_TargetAssemblyTypeName: "ClickerScene\xC1udioManager, Assembly-CSharp"
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: ClickerManager, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1250516906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2080,6 +2104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1906816893}
   - component: {fileID: 1906816892}
+  - component: {fileID: 1906816894}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2124,6 +2149,124 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1906816894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1906816891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e86dc97798c8724db3b729cb9aa298f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::ClickerScene\xC1udioManager"
+  clickerManager: {fileID: 1906816892}
+  GameplayOST:
+    Guid:
+      Data1: 1243761665
+      Data2: 1218302790
+      Data3: -1157589325
+      Data4: -1841201300
+    Path: event:/OSTs/Gameplay
+  MapAmbience:
+    Guid:
+      Data1: -39255120
+      Data2: 1333730774
+      Data3: -2012989012
+      Data4: -1266108830
+    Path: event:/Ambiences/Map
+  ConfigAmbience:
+    Guid:
+      Data1: -298918107
+      Data2: 1229135764
+      Data3: 60330929
+      Data4: 743775845
+    Path: event:/Ambiences/Config
+  PauseAmbience:
+    Guid:
+      Data1: -327686373
+      Data2: 1114550929
+      Data3: -1659290200
+      Data4: -1850632608
+    Path: event:/Ambiences/Pause
+  ButtonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
+  ButtonHover:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  PCCoinClickSound:
+    Guid:
+      Data1: -463210143
+      Data2: 1261650375
+      Data3: 2098097044
+      Data4: -1325273625
+    Path: event:/SFXs/UI/PC Click
+  UpgradeClickSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  ConfirmSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  NorteAreaClickSound:
+    Guid:
+      Data1: -2081727654
+      Data2: 1079102599
+      Data3: 2042145418
+      Data4: -833114015
+    Path: event:/SFXs/Scenery/Area Click Norte
+  SulAreaClickSound:
+    Guid:
+      Data1: -24732866
+      Data2: 1137192072
+      Data3: -1298118751
+      Data4: 1413906941
+    Path: event:/SFXs/Scenery/Area Click Sul
+  NordesteAreaClickSound:
+    Guid:
+      Data1: 1092254990
+      Data2: 1307259548
+      Data3: -782963282
+      Data4: 145435560
+    Path: event:/SFXs/Scenery/Area Click Nordeste
+  SudesteAreaClickSound:
+    Guid:
+      Data1: -1639090448
+      Data2: 1247497317
+      Data3: -10388843
+      Data4: -199185048
+    Path: event:/SFXs/Scenery/Area Click Sudeste
+  OesteAreaClickSound:
+    Guid:
+      Data1: 1101349779
+      Data2: 1166007949
+      Data3: 1668200622
+      Data4: 1310304056
+    Path: event:/SFXs/Scenery/Area Click Centro Oeste
+  ScreenSlideSound:
+    Guid:
+      Data1: 182736266
+      Data2: 1326449758
+      Data3: -1671042121
+      Data4: -1920030468
+    Path: event:/SFXs/UI/ScreenSlideIn
 --- !u!1 &2006029948
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,22 +9,22 @@ public class ClickerManager : MonoBehaviour
 
     public GameObject MainGameCanvas;
     [SerializeField] private GameObject _upgradeCanvas;
-    [SerializeField] private TextMeshProUGUI _textoContadorMoedas;
-    [SerializeField] private TextMeshProUGUI _textoContadorMoedasPorSeg;
+    [SerializeField] private TextMeshProUGUI _textoContadorPontos;
+    [SerializeField] private TextMeshProUGUI _textoContadorPontosPorSeg;
     [SerializeField] private GameObject _moeda;
-    public GameObject PopUpMoedas;
+    public GameObject PopUpPontos;
     [SerializeField] private GameObject _background;
 
     [Space]
     [SerializeField] private GameObject _uiUpgrade;
     [SerializeField] private Transform _uiUpgradeTransform;
-    public GameObject MoedasPorSeg_Obj;
+    public GameObject PontosPorSeg_Obj;
 
-    public double QuantidadeAtualMoeda { get; set; }
-    public double QuantidadeAtualMoedaPorSeg { get; set; }
+    public double QuantidadeAtualPontos { get; set; }
+    public double QuantidadeAtualPontosPorSeg { get; set; }
 
     //upgrades
-    public double MoedasPorSeg_Upgrades { get; set;}
+    public double PontosPorSeg_Upgrades { get; set; }
 
     public void Awake()
     {
@@ -33,26 +33,26 @@ public class ClickerManager : MonoBehaviour
             instance = this;
         }
 
-    //Exibir janela do jogo ou janela de upgrades
-    _upgradeCanvas.SetActive(false);
-    MainGameCanvas.SetActive(true);
+        //Exibir janela do jogo ou janela de upgrades
+        _upgradeCanvas.SetActive(false);
+        MainGameCanvas.SetActive(true);
 
 
-    //Atualizar contadores
-    AtualizarUIMoedas();
-    AtualizarUIMoedasPorSeg();
+        //Atualizar contadores
+        AtualizarUIPontos();
+        AtualizarUIPontosPorSeg();
     }
 
     #region Atualizando UI
 
-    private void AtualizarUIMoedas()
+    private void AtualizarUIPontos()
     {
-        _textoContadorMoedas.text = QuantidadeAtualMoeda.ToString();
+        _textoContadorPontos.text = QuantidadeAtualPontos.ToString();
     }
 
-    private void AtualizarUIMoedasPorSeg()
+    private void AtualizarUIPontosPorSeg()
     {
-        _textoContadorMoedasPorSeg.text = QuantidadeAtualMoedaPorSeg.ToString() + " p/s";
+        _textoContadorPontosPorSeg.text = QuantidadeAtualPontosPorSeg.ToString() + " p/s";
     }
     #endregion
 
@@ -61,25 +61,25 @@ public class ClickerManager : MonoBehaviour
     public void ClicouMoeda()
     {
         GanharMoeda();
-        
+
         //Utilizando pacote externo DOTween para gerar a animaÃ§Ã£o tÃ­pica de "popup" do elemento ao ser clicado
-        _moeda.transform.DOBlendableScaleBy(new Vector3(0.10f,0.10f,0.10f),0.10f).OnComplete(MoedaScaleBack);
-        _background.transform.DOBlendableScaleBy(new Vector3(0.03f,0.03f,0.03f),0.03f).OnComplete(BackgroundScaleBack);
+        _moeda.transform.DOBlendableScaleBy(new Vector3(0.10f, 0.10f, 0.10f), 0.10f).OnComplete(MoedaScaleBack);
+        _background.transform.DOBlendableScaleBy(new Vector3(0.03f, 0.03f, 0.03f), 0.03f).OnComplete(BackgroundScaleBack);
     }
     //Metodos private para fazer a parte de "diminuir" a imagem do elemento clicado
     private void MoedaScaleBack()
     {
-        _moeda.transform.DOBlendableScaleBy(new Vector3(-0.10f,-0.10f,-0.10f),0.10f);
+        _moeda.transform.DOBlendableScaleBy(new Vector3(-0.10f, -0.10f, -0.10f), 0.10f);
     }
     private void BackgroundScaleBack()
     {
-        _background.transform.DOBlendableScaleBy(new Vector3(-0.03f,-0.03f,-0.03f),0.03f);
+        _background.transform.DOBlendableScaleBy(new Vector3(-0.03f, -0.03f, -0.03f), 0.03f);
     }
 
     public void GanharMoeda()
     {
-        QuantidadeAtualMoeda += 1 + MoedasPorSeg_Upgrades;
-        AtualizarUIMoedas();
+        QuantidadeAtualPontos += 1 + PontosPorSeg_Upgrades;
+        AtualizarUIPontos();
 
     }
     #endregion
@@ -98,5 +98,44 @@ public class ClickerManager : MonoBehaviour
         MainGameCanvas.SetActive(true);
     }
 
+    #endregion
+
+    #region Aumentos simples
+    public void AumentoDePontosSimples(double quantidade)
+    {
+        QuantidadeAtualPontos += quantidade;
+        AtualizarUIPontos();
+    }
+
+    public void AumentoDePontosPorSegSimples(double quantidade)
+    {
+        QuantidadeAtualPontosPorSeg += quantidade;
+        AtualizarUIPontosPorSeg();
+    }
+    #endregion
+
+    #region Eventos Upgrades
+    /*  A partir dos scriptable objects definidos previamente, quando o jogador tiver os recursos disponíveis,
+        eles serão disponiveis para compra e os outros irão aumentar progressivamente de preço */
+
+    public void ClicarBotaoUpgrade(UpgradePontos upgrade, UpgradeButtons referenciaBotao)
+    {
+        //Se temos os pontos necessários
+        if (QuantidadeAtualPontos >= upgrade.CustoAtualUpgrade)
+        {
+            //compra o upgrade clicado
+            upgrade.AplicarUpgrade();
+
+            //desconta do valor atual
+            QuantidadeAtualPontos -= upgrade.CustoAtualUpgrade;
+
+            //atualizar UI
+            AtualizarUIPontos();
+
+            //aumentar preço de proximos upgrade e seus numeros na interface
+            upgrade.CustoAtualUpgrade = Mathf.Round((float)upgrade.CustoAtualUpgrade)*(1 * upgrade.MultiplicadorAumentoCustoPorUpgrade);
+            referenciaBotao.TextoCustoUpgrade.text = "Custo: "+ upgrade.CustoAtualUpgrade;
+        }
+    }
     #endregion
 }

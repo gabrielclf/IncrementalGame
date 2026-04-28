@@ -28,6 +28,7 @@ public class ClickerManager : MonoBehaviour
     public double PontosPorSeg_Upgrades { get; set; }
 
     private InicializarUpgrades _inicializarUpgrades;
+    private DisplayPontos _displayPontos;
 
     public void Awake()
     {
@@ -35,6 +36,8 @@ public class ClickerManager : MonoBehaviour
         {
             instance = this;
         }
+
+        _displayPontos = GetComponent<DisplayPontos>();
 
         //Exibir janela do jogo ou janela de upgrades
         _upgradeCanvas.SetActive(false);
@@ -53,12 +56,14 @@ public class ClickerManager : MonoBehaviour
 
     private void AtualizarUIPontos()
     {
-        _textoContadorPontos.text = QuantidadeAtualPontos.ToString();
+       // _textoContadorPontos.text = QuantidadeAtualPontos.ToString();
+        _displayPontos.atualizarTextoPontos(QuantidadeAtualPontos,_textoContadorPontos);
     }
 
     private void AtualizarUIPontosPorSeg()
     {
-        _textoContadorPontosPorSeg.text = QuantidadeAtualPontosPorSeg.ToString() + " p/s";
+        //_textoContadorPontosPorSeg.text = QuantidadeAtualPontosPorSeg.ToString() + " p/s";
+        _displayPontos.atualizarTextoPontos(QuantidadeAtualPontosPorSeg,_textoContadorPontosPorSeg, " P/S");
     }
     #endregion
 

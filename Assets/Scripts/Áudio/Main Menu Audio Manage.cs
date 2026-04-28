@@ -8,28 +8,21 @@ public class MainMenuAudioManage : MonoBehaviour
     [SerializeField] EventReference MainMenuMusic;
     [SerializeField] EventReference ButtonClickSound;
     [SerializeField] EventReference ButtonHoverSound;
-    [SerializeField] EventReference StartScreenAmbience;
+
 
     void Start()
     {
         PlayMainMenuMusic();
-        PlayStartScreenAmbience();
     }
 
 
-    #region Music and Ambience Activation
+    #region Music Activation
     // Método para tocar a música do menu principal
     public void PlayMainMenuMusic()
     {
         RuntimeManager.PlayOneShot(MainMenuMusic);
     } 
     #endregion
-
-    // Método para tocar a ambiência da tela inicial
-    public void PlayStartScreenAmbience()
-    {
-        RuntimeManager.PlayOneShot(StartScreenAmbience);
-    }
 
     #region UI Actions
     // Método para tocar o som de clique dos botões(chamado pelos botões do menu)

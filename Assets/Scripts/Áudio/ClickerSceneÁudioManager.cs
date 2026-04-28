@@ -12,16 +12,15 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     [Header("OSTs e Ambiences")]
     [SerializeField] EventReference GameplayOST;
     [SerializeField] EventReference MapAmbience;
-    [SerializeField] EventReference ConfigAmbience;
-    [SerializeField] EventReference PauseAmbience;
 
     // Referencia de Sons a serem tocados;
     [Header("SFXs")]
     [SerializeField] EventReference ButtonClickSound;
     [SerializeField] EventReference ButtonHover;
-    [SerializeField] EventReference PCCoinClickSound;
-    [SerializeField] EventReference UpgradeClickSound;
+    [SerializeField] EventReference PlanodeAçãoUpgradeClickSound;
     [SerializeField] EventReference ConfirmSound;
+    [SerializeField] EventReference DeclineSound;
+    [SerializeField] EventReference AreaUnlockSound;
     [SerializeField] EventReference NorteAreaClickSound;
     [SerializeField] EventReference SulAreaClickSound;
     [SerializeField] EventReference NordesteAreaClickSound;

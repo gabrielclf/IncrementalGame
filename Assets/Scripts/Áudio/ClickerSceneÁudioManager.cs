@@ -17,7 +17,6 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     [Header("SFXs")]
     [SerializeField] EventReference ButtonClickSound;
     [SerializeField] EventReference ButtonHover;
-    [SerializeField] EventReference PlanodeAçãoUpgradeClickSound;
     [SerializeField] EventReference ConfirmSound;
     [SerializeField] EventReference DeclineSound;
     [SerializeField] EventReference AreaUnlockSound;
@@ -55,6 +54,32 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     }
     #endregion
 
+    #region Area Click Sounds
+    public void PlayNorteAreaClickSound()
+    {
+        RuntimeManager.PlayOneShot(NorteAreaClickSound);
+    }
+
+    public void PlaySulAreaClickSound()
+    {
+        RuntimeManager.PlayOneShot(SulAreaClickSound);
+    }
+
+    public void PlayNordesteAreaClickSound()
+    {
+        RuntimeManager.PlayOneShot(NordesteAreaClickSound);
+    }
+
+    public void PlaySudesteAreaClickSound()
+    {
+        RuntimeManager.PlayOneShot(SudesteAreaClickSound);
+    }
+
+    public void PlayOesteAreaClickSound()
+    {
+        RuntimeManager.PlayOneShot(OesteAreaClickSound);
+    }
+    #endregion
 
 
     // Update is called once per frame

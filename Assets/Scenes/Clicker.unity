@@ -213,6 +213,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1906816896}
+        m_TargetAssemblyTypeName: "ClickerScene\xC1udioManager, Assembly-CSharp"
+        m_MethodName: PlayNorteAreaClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &191727473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1410,6 +1422,7 @@ GameObject:
   - component: {fileID: 1250516907}
   - component: {fileID: 1250516906}
   - component: {fileID: 1250516905}
+  - component: {fileID: 1250516908}
   m_Layer: 5
   m_Name: BotaoLojaUpgrades
   m_TagString: Untagged
@@ -1493,25 +1506,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1906816896}
-        m_TargetAssemblyTypeName: "ClickerScene\xC1udioManager, Assembly-CSharp"
+      - m_Target: {fileID: 1250516908}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: PlayButtonClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ClickerManager, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1555,6 +1556,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250516903}
   m_CullTransparentMesh: 1
+--- !u!114 &1250516908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250516903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  Button_Click:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &1688402567
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,13 +2184,6 @@ MonoBehaviour:
       Data3: -1467502407
       Data4: -972598990
     Path: event:/SFXs/UI/Button Hover
-  "PlanodeA\xE7\xE3oUpgradeClickSound":
-    Guid:
-      Data1: 115297713
-      Data2: 1086617823
-      Data3: 961072791
-      Data4: -2121242808
-    Path: "event:/SFXs/UI/Upgrade Plano de A\xE7\xE3o"
   ConfirmSound:
     Guid:
       Data1: -1281604179

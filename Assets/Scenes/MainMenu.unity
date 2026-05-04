@@ -1138,6 +1138,7 @@ GameObject:
   - component: {fileID: 1719148219}
   - component: {fileID: 1719148218}
   - component: {fileID: 1719148217}
+  - component: {fileID: 1719148220}
   m_Layer: 5
   m_Name: BotaoFechar
   m_TagString: Untagged
@@ -1221,6 +1222,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1719148220}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1719148218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1259,6 +1272,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719148215}
   m_CullTransparentMesh: 1
+--- !u!114 &1719148220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719148215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  Button_Click:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &1769139458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,6 +1310,7 @@ GameObject:
   - component: {fileID: 1769139462}
   - component: {fileID: 1769139461}
   - component: {fileID: 1769139460}
+  - component: {fileID: 1769139463}
   m_Layer: 5
   m_Name: BotaoOpcoes
   m_TagString: Untagged
@@ -1342,8 +1382,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2075924150}
-        m_TargetAssemblyTypeName: MainMenuAudioManage, Assembly-CSharp
+      - m_Target: {fileID: 1769139463}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
         m_MethodName: PlayButtonClickSound
         m_Mode: 1
         m_Arguments:
@@ -1392,6 +1432,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1769139458}
   m_CullTransparentMesh: 1
+--- !u!114 &1769139463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769139458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  Button_Click:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &2075924149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,6 +1468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2075924151}
   - component: {fileID: 2075924150}
+  - component: {fileID: 2075924152}
   m_Layer: 0
   m_Name: Main Menu Manager
   m_TagString: Untagged
@@ -1428,27 +1495,6 @@ MonoBehaviour:
       Data3: -404957266
       Data4: 626311105
     Path: event:/OSTs/Tela Inicial
-  ButtonClickSound:
-    Guid:
-      Data1: -271184925
-      Data2: 1137006064
-      Data3: 1915184539
-      Data4: 450884697
-    Path: event:/SFXs/UI/Button Click
-  ButtonHoverSound:
-    Guid:
-      Data1: -2093147432
-      Data2: 1334818052
-      Data3: -1467502407
-      Data4: -972598990
-    Path: event:/SFXs/UI/Button Hover
-  StartScreenAmbience:
-    Guid:
-      Data1: 255893597
-      Data2: 1149517485
-      Data3: -157788482
-      Data4: 445995978
-    Path: event:/Ambiences/StartScreen
 --- !u!4 &2075924151
 Transform:
   m_ObjectHideFlags: 0
@@ -1464,6 +1510,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2075924152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075924149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6baa322df10ad1f408f33313c379f269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradesAudioManager
+  UpgradeSound:
+    Guid:
+      Data1: 115297713
+      Data2: 1086617823
+      Data3: 961072791
+      Data4: -2121242808
+    Path: "event:/SFXs/UI/Upgrade Plano de A\xE7\xE3o"
+  ButtonHoverSound:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
 --- !u!1 &2144735538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +1548,7 @@ GameObject:
   - component: {fileID: 2144735542}
   - component: {fileID: 2144735541}
   - component: {fileID: 2144735540}
+  - component: {fileID: 2144735543}
   m_Layer: 5
   m_Name: BotaoIniciar
   m_TagString: Untagged
@@ -1559,6 +1632,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 2144735543}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2144735541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1597,6 +1682,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144735538}
   m_CullTransparentMesh: 1
+--- !u!114 &2144735543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144735538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  Button_Click:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

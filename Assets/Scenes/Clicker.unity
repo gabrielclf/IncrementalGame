@@ -436,6 +436,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -561,6 +562,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &584854534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,7 +1493,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1906816894}
+      - m_Target: {fileID: 1906816896}
         m_TargetAssemblyTypeName: "ClickerScene\xC1udioManager, Assembly-CSharp"
         m_MethodName: PlayButtonClickSound
         m_Mode: 1
@@ -2128,20 +2143,6 @@ MonoBehaviour:
       Data3: -2012989012
       Data4: -1266108830
     Path: event:/Ambiences/Map
-  ConfigAmbience:
-    Guid:
-      Data1: -298918107
-      Data2: 1229135764
-      Data3: 60330929
-      Data4: 743775845
-    Path: event:/Ambiences/Config
-  PauseAmbience:
-    Guid:
-      Data1: -327686373
-      Data2: 1114550929
-      Data3: -1659290200
-      Data4: -1850632608
-    Path: event:/Ambiences/Pause
   ButtonClickSound:
     Guid:
       Data1: -271184925
@@ -2156,27 +2157,34 @@ MonoBehaviour:
       Data3: -1467502407
       Data4: -972598990
     Path: event:/SFXs/UI/Button Hover
-  PCCoinClickSound:
+  "PlanodeA\xE7\xE3oUpgradeClickSound":
     Guid:
-      Data1: -463210143
-      Data2: 1261650375
-      Data3: 2098097044
-      Data4: -1325273625
-    Path: event:/SFXs/UI/PC Click
-  UpgradeClickSound:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 115297713
+      Data2: 1086617823
+      Data3: 961072791
+      Data4: -2121242808
+    Path: "event:/SFXs/UI/Upgrade Plano de A\xE7\xE3o"
   ConfirmSound:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1281604179
+      Data2: 1077800841
+      Data3: -460185695
+      Data4: -822796897
+    Path: event:/SFXs/UI/Confirm
+  DeclineSound:
+    Guid:
+      Data1: 1202847075
+      Data2: 1259096185
+      Data3: -1967964747
+      Data4: 1274207173
+    Path: event:/SFXs/UI/Decline
+  AreaUnlockSound:
+    Guid:
+      Data1: -606009036
+      Data2: 1254083563
+      Data3: -722319467
+      Data4: 2099259720
+    Path: event:/SFXs/Scenery/Area Unlock
   NorteAreaClickSound:
     Guid:
       Data1: -2081727654
@@ -2314,6 +2322,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1906816896}
+        m_TargetAssemblyTypeName: "ClickerScene\xC1udioManager, Assembly-CSharp"
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2006029951
 MonoBehaviour:
   m_ObjectHideFlags: 0

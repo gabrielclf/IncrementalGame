@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ec55082d66a4334182fea3194cbb756, type: 3}
   m_Name: Pontos por Click 1
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
+  TextoTituloUpgrade: 1 PPC
   QuantidadeUpgrades: 1
   CustoOriginalUpgrade: 10
   CustoAtualUpgrade: 10
   MultiplicadorAumentoCustoPorUpgrade: 0.08
-  TextoBotaoUpgrade: 1 PPC
+  TextoBotaoUpgrade: Melhorar
   TextoDescricaoUpgrade: 'Aumenta seus Pontor Por Click em: {0}'

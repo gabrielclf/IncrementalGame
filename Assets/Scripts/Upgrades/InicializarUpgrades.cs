@@ -17,9 +17,10 @@ public class InicializarUpgrades : MonoBehaviour
 
             //setar (set) texto nos botões
             UpgradeButtons butt = go.GetComponent<UpgradeButtons>();
+            butt.TituloUpgrade.text = upgrades[id_Atual].TextoTituloUpgrade;
             butt.TextoBotaoUpgrade.text = upgrades[id_Atual].TextoBotaoUpgrade;
             butt.TextoDescricaoUpgrade.SetText(upgrades[id_Atual].TextoDescricaoUpgrade, upgrades[id_Atual].QuantidadeUpgrades);
-            butt.TextoCustoUpgrade.text = "Custo: "+ upgrades[id_Atual].TextoDescricaoUpgrade;
+            butt.TextoCustoUpgrade.text = "Custo: "+ upgrades[id_Atual].CustoAtualUpgrade;
 
             //setar eventos onClick em botões dinamicamente criados
             butt.BotaoUpgrade.onClick.AddListener(delegate {ClickerManager.instance.ClicarBotaoUpgrade(upgrades[id_Atual], butt); });

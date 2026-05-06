@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: 1 PPS
   QuantidadeUpgrades: 1
-  CustoOriginalUpgrade: 20
-  CustoAtualUpgrade: 20
+  CustoOriginalUpgrade: 25
+  CustoAtualUpgrade: 25
   MultiplicadorAumentoCustoPorUpgrade: 0.08
   TextoBotaoUpgrade: Melhorar
-  TextoDescricaoUpgrade: 'Aumenta seus Pontos Por Segundo em: {0}'
+  TextoDescricaoUpgrade: Aumenta seus Pontos Por Segundo em {0}

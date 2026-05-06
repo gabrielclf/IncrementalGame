@@ -14,13 +14,13 @@ public class DisplayPontos : MonoBehaviour
             * T = trilhão
             * Q = quadri... e eu sei la
         */
-        string[] sufixos = {"","k","M","B","T","Q"};
+        string[] sufixos = { "", "k", "M", "B", "T", "Q"};
         int index = 0;
-        while (contagemPontos >= 1000 && index < sufixos.Length - 1)
+        while ((contagemPontos >= 1000) && (index < sufixos.Length - 1))
         {
             contagemPontos /= 1000;
             index++;
-            if (index >= sufixos.Length - 1 && contagemPontos >= 1000)
+            if ((index >= sufixos.Length - 1) && (contagemPontos >= 1000))
             {
                 break;
             }
@@ -31,7 +31,7 @@ public class DisplayPontos : MonoBehaviour
             textoFormatado = contagemPontos.ToString();
         } else
         {
-            textoFormatado = contagemPontos.ToString("F1"); //f1 apenas uma casa decial
+            textoFormatado = contagemPontos.ToString("F1") + sufixos[index]; //f1 apenas uma casa decial
         }
         texto_a_mudar.text = textoFormatado + optionalEndText;
     }

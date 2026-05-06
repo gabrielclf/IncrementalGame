@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using Unity.Mathematics.Geometry;
 
 public class ClickerManager : MonoBehaviour
 {
@@ -39,14 +40,13 @@ public class ClickerManager : MonoBehaviour
 
         _displayPontos = GetComponent<DisplayPontos>();
 
-        //Exibir janela do jogo ou janela de upgrades
-        _upgradeCanvas.SetActive(false);
-        MainGameCanvas.SetActive(true);
-
-
         //Atualizar contadores
         AtualizarUIPontos();
         AtualizarUIPontosPorSeg();
+
+        //Exibir janela do jogo ou janela de upgrades
+        _upgradeCanvas.SetActive(false);
+        MainGameCanvas.SetActive(true);
 
         _inicializarUpgrades = GetComponent<InicializarUpgrades>();
         _inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);
@@ -57,13 +57,13 @@ public class ClickerManager : MonoBehaviour
     private void AtualizarUIPontos()
     {
        // _textoContadorPontos.text = QuantidadeAtualPontos.ToString();
-        _displayPontos.atualizarTextoPontos(QuantidadeAtualPontos,_textoContadorPontos);
+        _displayPontos.atualizarTextoPontos(QuantidadeAtualPontos, _textoContadorPontos);
     }
 
     private void AtualizarUIPontosPorSeg()
     {
         //_textoContadorPontosPorSeg.text = QuantidadeAtualPontosPorSeg.ToString() + " p/s";
-        _displayPontos.atualizarTextoPontos(QuantidadeAtualPontosPorSeg,_textoContadorPontosPorSeg, " P/S");
+        _displayPontos.atualizarTextoPontos(QuantidadeAtualPontosPorSeg, _textoContadorPontosPorSeg, " P/S");
     }
     #endregion
 
@@ -144,7 +144,7 @@ public class ClickerManager : MonoBehaviour
             AtualizarUIPontos();
 
             //aumentar preço de proximos upgrade e seus numeros na interface
-            upgrade.CustoAtualUpgrade = Mathf.Round((float)upgrade.CustoAtualUpgrade)*(1 * upgrade.MultiplicadorAumentoCustoPorUpgrade);
+            upgrade.CustoAtualUpgrade = Mathf.Round((float)((upgrade.CustoAtualUpgrade)*(1 + upgrade.MultiplicadorAumentoCustoPorUpgrade)));
             referenciaBotao.TextoCustoUpgrade.text = "Custo: "+ upgrade.CustoAtualUpgrade;
         }
     }

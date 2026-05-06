@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
   m_Name: Pontos por Segundo 1
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: 1 PPS
   QuantidadeUpgrades: 1
   CustoOriginalUpgrade: 20
   CustoAtualUpgrade: 20
   MultiplicadorAumentoCustoPorUpgrade: 0.08
-  TextoBotaoUpgrade: 1 PPS
+  TextoBotaoUpgrade: Melhorar
   TextoDescricaoUpgrade: 'Aumenta seus Pontos Por Segundo em: {0}'

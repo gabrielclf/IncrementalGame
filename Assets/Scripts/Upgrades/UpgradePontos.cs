@@ -5,13 +5,14 @@ using TMPro;
 public abstract class UpgradePontos : ScriptableObject
 { //Upgrades que irão afetar os valores do jogo. Abstract class pq será usada por outras classes depois.
     //valores placeholder são iguais ao vídeo inspiração por enquanto
+    public string TextoTituloUpgrade;
     public float QuantidadeUpgrades = 1f;
 
     public double CustoOriginalUpgrade = 100;
     public double CustoAtualUpgrade = 100;
     public double MultiplicadorAumentoCustoPorUpgrade = 0.05f;
 
-    public string TextoBotaoUpgrade;
+    public string TextoBotaoUpgrade = "Melhorar";
     [TextArea(3,10)]
     public string TextoDescricaoUpgrade;
 

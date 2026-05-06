@@ -18,4 +18,4 @@ MonoBehaviour:
   CustoAtualUpgrade: 10
   MultiplicadorAumentoCustoPorUpgrade: 0.08
   TextoBotaoUpgrade: Melhorar
-  TextoDescricaoUpgrade: 'Aumenta seus Pontor Por Click em: {0}'
+  TextoDescricaoUpgrade: Aumenta seus Pontor Por Click em {0}

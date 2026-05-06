@@ -18,4 +18,4 @@ MonoBehaviour:
   CustoAtualUpgrade: 20
   MultiplicadorAumentoCustoPorUpgrade: 0.08
   TextoBotaoUpgrade: Melhorar
-  TextoDescricaoUpgrade: 'Aumenta seus Pontos Por Segundo em: {0}'
+  TextoDescricaoUpgrade: Aumenta seus Pontos Por Segundo em {0}

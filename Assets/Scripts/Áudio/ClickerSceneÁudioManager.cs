@@ -21,9 +21,8 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     [SerializeField] EventReference DeclineSound;
     [SerializeField] EventReference AreaUnlockSound;
     [SerializeField] EventReference NorteAreaClickSound;
-    [SerializeField] EventReference SulAreaClickSound;
+    [SerializeField] EventReference SulSudesteAreaClickSound;
     [SerializeField] EventReference NordesteAreaClickSound;
-    [SerializeField] EventReference SudesteAreaClickSound;
     [SerializeField] EventReference OesteAreaClickSound;
     [SerializeField] EventReference ScreenSlideSound;
 
@@ -60,19 +59,14 @@ public class ClickerSceneÁudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(NorteAreaClickSound);
     }
 
-    public void PlaySulAreaClickSound()
+    public void PlaySulSudesteAreaClickSound()
     {
-        RuntimeManager.PlayOneShot(SulAreaClickSound);
+        RuntimeManager.PlayOneShot(SulSudesteAreaClickSound);
     }
 
     public void PlayNordesteAreaClickSound()
     {
         RuntimeManager.PlayOneShot(NordesteAreaClickSound);
-    }
-
-    public void PlaySudesteAreaClickSound()
-    {
-        RuntimeManager.PlayOneShot(SudesteAreaClickSound);
     }
 
     public void PlayOesteAreaClickSound()

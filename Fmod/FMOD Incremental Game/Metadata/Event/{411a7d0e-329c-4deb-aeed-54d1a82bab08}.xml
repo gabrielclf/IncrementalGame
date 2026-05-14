@@ -5,7 +5,7 @@
 			<value>Area Click Nordeste</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{af0845c3-813a-4305-a389-fd0f6b2e94bd}</destination>
@@ -82,7 +82,11 @@
 			<destination>{e58b6a0b-44cd-44f8-b033-006fc6445193}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{b8dd9ee9-0bad-40ed-949e-00cae0eab556}" />
+	<object class="MultiSound" id="{b8dd9ee9-0bad-40ed-949e-00cae0eab556}">
+		<relationship name="sounds">
+			<destination>{3ceb6a8f-5e96-42f1-a8b5-076a6143875e}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{38db46fa-de71-465b-883b-031462617ce1}">
 		<relationship name="effects">
 			<destination>{7c553e0c-bbad-45e0-8a10-70895a4f1135}</destination>
@@ -95,6 +99,34 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5fa281d3-f2b2-4751-9509-fa9435245f3d}" />
+	<object class="SingleSound" id="{3ceb6a8f-5e96-42f1-a8b5-076a6143875e}">
+		<property name="volume">
+			<value>-9</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{3721cc99-f817-4399-a598-279b3a6d3b13}</destination>
+			<destination>{29da93b4-cc12-4496-9221-a1016bc89161}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{5e00a818-2fb6-4c94-8131-f771085996ab}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{7c553e0c-bbad-45e0-8a10-70895a4f1135}" />
 	<object class="MixerBusFader" id="{3a9e9be4-7c69-4bcb-80d1-f8c04c86c0e0}" />
+	<object class="RandomizerModulator" id="{3721cc99-f817-4399-a598-279b3a6d3b13}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{29da93b4-cc12-4496-9221-a1016bc89161}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>2</value>
+		</property>
+	</object>
 </objects>

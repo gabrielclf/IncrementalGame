@@ -5,7 +5,7 @@
 			<value>Area Click Centro Oeste</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{af0845c3-813a-4305-a389-fd0f6b2e94bd}</destination>
@@ -82,7 +82,11 @@
 			<destination>{9b4bdb63-5b86-42c2-a822-95ef75bddd40}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{64153447-e197-4751-a88d-a800ddf113e1}" />
+	<object class="MultiSound" id="{64153447-e197-4751-a88d-a800ddf113e1}">
+		<relationship name="sounds">
+			<destination>{37cca7be-a77e-488f-91ff-79c385100544}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{8b79ee51-a6cd-4293-a819-f84c7e953e87}">
 		<relationship name="effects">
 			<destination>{bdd993f0-d0b2-4122-a15f-b3c84d567c48}</destination>
@@ -95,6 +99,34 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{53d41ffe-7ab0-4986-9f33-e9d105e90579}" />
+	<object class="SingleSound" id="{37cca7be-a77e-488f-91ff-79c385100544}">
+		<property name="volume">
+			<value>-9</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{6841d06a-9296-422b-b0aa-8677ff9203c9}</destination>
+			<destination>{038b24d0-b810-4dcc-ae20-b8953f902e93}</destination>
+		</relationship>
+		<relationship name="audioFile">
+			<destination>{da4b7ace-9704-456c-8fb7-fa2e43ee54c5}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{bdd993f0-d0b2-4122-a15f-b3c84d567c48}" />
 	<object class="MixerBusFader" id="{0413247a-dff3-473e-ab93-07bd45fa06e9}" />
+	<object class="RandomizerModulator" id="{6841d06a-9296-422b-b0aa-8677ff9203c9}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>2</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{038b24d0-b810-4dcc-ae20-b8953f902e93}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>2.5</value>
+		</property>
+	</object>
 </objects>

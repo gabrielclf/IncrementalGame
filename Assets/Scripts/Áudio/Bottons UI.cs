@@ -3,27 +3,48 @@ using FMODUnity;
 using FMOD.Studio;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using FMODUnityResonance;
 
-public class MenuButtons : MonoBehaviour, IPointerEnterHandler
+public class MenuButtons : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    [SerializeField] EventReference Button_Hover;
-    [SerializeField] EventReference Button_Click;
+    [SerializeField] private EventReference Button_Hover;
+    [SerializeField] private EventReference Button_Click;
+
     private Button button;
+    private EventInstance hoverInstance;
+
     void Start()
     {
         button = GetComponent<Button>();
     }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (button.interactable)
         {
-           RuntimeManager.PlayOneShot(Button_Hover);
-        } 
+            hoverInstance = RuntimeManager.CreateInstance(Button_Hover);
+            hoverInstance.start();
+        }
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        StopHoverSound();
     }
         
     public void PlayButtonClickSound()
     {
         RuntimeManager.PlayOneShot(Button_Click);
+    }
+
+    private void StopHoverSound()
+    {
+        if (hoverInstance.isValid())
+        {
+            hoverInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            hoverInstance.release();
+            hoverInstance.clearHandle();
+        }
     }
 
     // Update is called once per frame

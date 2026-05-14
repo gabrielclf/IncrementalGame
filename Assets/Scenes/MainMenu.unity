@@ -1522,6 +1522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6baa322df10ad1f408f33313c379f269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradesAudioManager
+  upgradeData: {fileID: 0}
   UpgradeSound:
     Guid:
       Data1: 115297713
@@ -1529,6 +1530,13 @@ MonoBehaviour:
       Data3: 961072791
       Data4: -2121242808
     Path: "event:/SFXs/UI/Upgrade Plano de A\xE7\xE3o"
+  BuyUpgradeSound:
+    Guid:
+      Data1: -193045559
+      Data2: 1131381052
+      Data3: -719254087
+      Data4: -789805260
+    Path: "event:/SFXs/UI/Buy Plano de Ac\xE7\xE3o"
   ButtonHoverSound:
     Guid:
       Data1: -2093147432

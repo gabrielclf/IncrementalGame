@@ -30,6 +30,10 @@ public class ClickerManager : MonoBehaviour
 
     private InicializarUpgrades _inicializarUpgrades;
     private DisplayPontos _displayPontos;
+    public void Start()
+    {
+        
+    }
 
     public void Awake()
     {
@@ -69,18 +73,18 @@ public class ClickerManager : MonoBehaviour
 
     #region Clicar_Moeda
 
-    public void ClicouMoeda()
+    public void ClicouMoeda(GameObject moeda)
     {
         GanharMoeda();
-
+        
         //Utilizando pacote externo DOTween para gerar a animaÃ§Ã£o tÃ­pica de "popup" do elemento ao ser clicado
-        _moeda.transform.DOBlendableScaleBy(new Vector3(0.10f, 0.10f, 0.10f), 0.10f).OnComplete(MoedaScaleBack);
+        moeda.transform.DOBlendableScaleBy(new Vector3(0.10f, 0.10f, 0.10f), 0.10f).OnComplete(() => MoedaScaleBack(moeda));
         _background.transform.DOBlendableScaleBy(new Vector3(0.03f, 0.03f, 0.03f), 0.03f).OnComplete(BackgroundScaleBack);
     }
     //Metodos private para fazer a parte de "diminuir" a imagem do elemento clicado
-    private void MoedaScaleBack()
+    private void MoedaScaleBack(GameObject moeda)
     {
-        _moeda.transform.DOBlendableScaleBy(new Vector3(-0.10f, -0.10f, -0.10f), 0.10f);
+        moeda.transform.DOBlendableScaleBy(new Vector3(-0.10f, -0.10f, -0.10f), 0.10f);
     }
     private void BackgroundScaleBack()
     {

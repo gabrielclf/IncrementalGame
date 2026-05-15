@@ -5,7 +5,7 @@
 			<value>Area Click Norte</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{af0845c3-813a-4305-a389-fd0f6b2e94bd}</destination>
@@ -99,7 +99,16 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a28e9bec-1d27-4048-9fe3-4a7c87b6abd1}" />
-	<object class="MultiSound" id="{cc48cada-0328-445d-9529-18163a1ad9e3}" />
+	<object class="MultiSound" id="{cc48cada-0328-445d-9529-18163a1ad9e3}">
+		<relationship name="sounds">
+			<destination>{2fafa710-9f53-45ee-ab32-4f5ceae70714}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{ec139ea6-4ac8-4b3a-8458-2f103ef72651}" />
 	<object class="MixerBusFader" id="{28f9f984-d68f-4215-b099-677d5d06f0a2}" />
+	<object class="SingleSound" id="{2fafa710-9f53-45ee-ab32-4f5ceae70714}">
+		<relationship name="audioFile">
+			<destination>{f32eeec0-1fff-48bf-b178-ec544d98c9cf}</destination>
+		</relationship>
+	</object>
 </objects>

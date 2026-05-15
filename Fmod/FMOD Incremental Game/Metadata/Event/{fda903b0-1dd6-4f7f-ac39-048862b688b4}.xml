@@ -339,17 +339,32 @@
 		<property name="soundStealing">
 			<value>3</value>
 		</property>
+		<property name="minimumTimeBetweenSounds">
+			<value>825</value>
+		</property>
+		<property name="maximumTimeBetweenSounds">
+			<value>20000</value>
+		</property>
+		<property name="spawnRate">
+			<value>50</value>
+		</property>
 		<property name="minimumScatterDistance">
-			<value>25</value>
+			<value>50</value>
 		</property>
 		<property name="maximumScatterDistance">
 			<value>500</value>
+		</property>
+		<property name="volumeRandomization">
+			<value>-1.5</value>
 		</property>
 		<relationship name="sound">
 			<destination>{c593c23a-7257-4604-959a-5a9ec808c473}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{f3d5fed8-6426-42ed-ba49-c2d86e486304}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<property name="name">
 			<value>Excavadeiras</value>
 		</property>
@@ -410,6 +425,7 @@
 	<object class="MixerBusEffectChain" id="{af94b657-3e99-40fd-b56a-c216cb4f3a81}">
 		<relationship name="effects">
 			<destination>{bf1dfb76-fb09-40ac-a7a3-52a541f1ccb2}</destination>
+			<destination>{0567f72a-b50f-43e9-b037-9c27149de9e0}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2617a013-87d6-40ff-924f-4c57d939b0ee}" />
@@ -494,10 +510,10 @@
 	</object>
 	<object class="FlangerEffect" id="{1f6e50e2-35cc-45e4-aa2d-c234f8e0d81b}">
 		<property name="rate">
-			<value>0.049999997</value>
+			<value>0.0299999993</value>
 		</property>
 		<property name="delay">
-			<value>0.5</value>
+			<value>0.149999991</value>
 		</property>
 		<property name="mix">
 			<value>16</value>
@@ -517,6 +533,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{bf1dfb76-fb09-40ac-a7a3-52a541f1ccb2}" />
+	<object class="PannerEffect" id="{0567f72a-b50f-43e9-b037-9c27149de9e0}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{c7337609-2243-4553-a3b2-65bc4ef4c0b9}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{7068428a-f608-40c5-84ae-ab36ffc50665}">
 		<relationship name="audioFile">
 			<destination>{f48ea883-e84e-4240-a4b2-bcf4c59af807}</destination>
@@ -576,21 +600,33 @@
 	</object>
 	<object class="MixerBusFader" id="{ca63b64e-24a1-4b2c-a733-d873e367f849}" />
 	<object class="SingleSound" id="{aa978662-59b0-4736-8b14-0dd07b6cb632}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{9fbe51a9-e0a4-4fed-9d84-3234edcd4fcc}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{b2411162-4ac3-45b4-ab5d-99ab2182a1e1}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{47c109a2-3208-4344-a685-a6442317693a}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{fbc44ba1-c714-45ae-88ff-44e340f1dda1}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{b7a39e3b-3c8e-472d-b6d1-e3ec502b120b}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{0fcfc78c-4446-4f48-b304-e945dc85bd08}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{acd6a59e-8bbf-48a7-aec3-8fb78cfd7595}</destination>
 		</relationship>
@@ -604,7 +640,7 @@
 			<value>0.099999994</value>
 		</property>
 		<property name="depth">
-			<value>31</value>
+			<value>13</value>
 		</property>
 	</object>
 	<object class="LFOModulator" id="{31897e82-b690-41c3-a005-ad12b539d6b1}">
@@ -619,6 +655,17 @@
 		</property>
 		<property name="direction">
 			<value>-100</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{c7337609-2243-4553-a3b2-65bc4ef4c0b9}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>stereoPan</value>
+		</property>
+		<property name="rate">
+			<value>0.099999994</value>
+		</property>
+		<property name="depth">
+			<value>8</value>
 		</property>
 	</object>
 </objects>

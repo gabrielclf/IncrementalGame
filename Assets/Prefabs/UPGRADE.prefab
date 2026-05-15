@@ -298,6 +298,13 @@ MonoBehaviour:
       Data3: -719254087
       Data4: -789805260
     Path: "event:/SFXs/UI/Buy Plano de Ac\xE7\xE3o"
+  CantUpgradeSound:
+    Guid:
+      Data1: -235263907
+      Data2: 1303398411
+      Data3: -347187827
+      Data4: 1899568010
+    Path: event:/SFXs/UI/Cant Afford
   ButtonHoverSound:
     Guid:
       Data1: -2093147432

@@ -3,7 +3,7 @@ using UnityEngine;
 public class DontDestroy : MonoBehaviour
 {
     // Não destruir objetos ao passar de cena para cena
-    private static GameObject[] objetosPersistentes = new GameObject[3];
+    private static GameObject[] objetosPersistentes = new GameObject[10];
     public int indexOP; //indice de quantos objetos persistentes irão ter
     void Awake()
     {

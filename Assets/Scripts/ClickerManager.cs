@@ -17,9 +17,9 @@ public class ClickerManager : MonoBehaviour
     [SerializeField] private GameObject _background;
 
     [Space]
-    public UpgradePontos[] up;
+    /*public UpgradePontos[] up;
     [SerializeField] private GameObject _uiUpgrade;
-    [SerializeField] private Transform _uiUpgradeTransform;
+    [SerializeField] private Transform _uiUpgradeTransform;*/
     public GameObject PontosPorSeg_Obj;
 
     public double QuantidadeAtualPontos { get; set; }
@@ -28,7 +28,7 @@ public class ClickerManager : MonoBehaviour
     //upgrades
     public double PontosPorSeg_Upgrades { get; set; }
 
-    private InicializarUpgrades _inicializarUpgrades;
+//    private InicializarUpgrades _inicializarUpgrades;
     private DisplayPontos _displayPontos;
 
     public void Awake()
@@ -48,8 +48,8 @@ public class ClickerManager : MonoBehaviour
         _upgradeCanvas.SetActive(false);
         MainGameCanvas.SetActive(true);
 
-        _inicializarUpgrades = GetComponent<InicializarUpgrades>();
-        _inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);
+        //_inicializarUpgrades = GetComponent<InicializarUpgrades>();
+        //_inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);
     }
 
     #region Atualizando UI
@@ -75,7 +75,7 @@ public class ClickerManager : MonoBehaviour
 
         //Utilizando pacote externo DOTween para gerar a animaÃ§Ã£o tÃ­pica de "popup" do elemento ao ser clicado
         _moeda.transform.DOBlendableScaleBy(new Vector3(0.10f, 0.10f, 0.10f), 0.10f).OnComplete(MoedaScaleBack);
-        _background.transform.DOBlendableScaleBy(new Vector3(0.03f, 0.03f, 0.03f), 0.03f).OnComplete(BackgroundScaleBack);
+        //this._background.transform.DOBlendableScaleBy(new Vector3(0.03f, 0.03f, 0.03f), 0.03f).OnComplete(BackgroundScaleBack);
     }
     //Metodos private para fazer a parte de "diminuir" a imagem do elemento clicado
     private void MoedaScaleBack()

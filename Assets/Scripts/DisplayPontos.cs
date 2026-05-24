@@ -14,7 +14,7 @@ public class DisplayPontos : MonoBehaviour
             * T = trilhão
             * Q = quadri... e eu sei la
         */
-        string[] sufixos = { "", "mil", "milhões", "bilhões", "trilhões", "quadrilhões"};
+        string[] sufixos = { "", "k", "M", "B", "T", "Q"};
         int index = 0;
         while ((contagemPontos >= 1000) && (index < sufixos.Length - 1))
         {

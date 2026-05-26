@@ -199,7 +199,7 @@ GameObject:
   - component: {fileID: 191727472}
   m_Layer: 5
   m_Name: MoedaClicavel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2599,7 +2599,6 @@ RectTransform:
   - {fileID: 1688402568}
   - {fileID: 169101143}
   - {fileID: 2051429464}
-  - {fileID: 1250516904}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3405,6 +3404,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1250516904}
   - {fileID: 1393915031}
   - {fileID: 1692846550}
   - {fileID: 462773956}
@@ -3447,7 +3447,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1703149482}
-  m_Father: {fileID: 807405740}
+  m_Father: {fileID: 1187012052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -3724,7 +3724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bc26c4b959db4990af345b92dbe63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DontDestroy
-  indexOP: 3
+  indexOP: 2
 --- !u!1 &1295668517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,7 +4045,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1888082883}
         m_TargetAssemblyTypeName: UIButtonController, Assembly-CSharp
         m_MethodName: PauseGame
         m_Mode: 1
@@ -4069,7 +4069,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1692846549}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5422,7 +5422,7 @@ GameObject:
   - component: {fileID: 1731301324}
   - component: {fileID: 1731301325}
   m_Layer: 5
-  m_Name: Content
+  m_Name: ContentN
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

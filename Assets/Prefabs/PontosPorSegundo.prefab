@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 225de278408f3c94abdbf67a9cca2a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PontosPorSegundoTimer
+  duracao_timer: 1

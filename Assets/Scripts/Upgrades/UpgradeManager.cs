@@ -1,4 +1,7 @@
+using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UpgradeManager : MonoBehaviour
 {
@@ -14,5 +17,39 @@ public class UpgradeManager : MonoBehaviour
     {
         _inicializarUpgrades = GetComponent<InicializarUpgrades>();
         _inicializarUpgrades.inicializarUpgrades(_upgrades, _uiUpgrade, _uiUpgradeTransform);
+
+        if (_moeda == null)
+        {
+            _moeda = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        //Fazer a loja de upgrades correta na região/cena correta
+        Scene _cenaAtual = SceneManager.GetActiveScene();
+        if (_uiUpgradeTransform == null)
+        {
+            switch (_cenaAtual.name)
+            {
+                case "RegiaoNorte":
+                    _uiUpgradeTransform.transform.Find("ContentN");
+                    break;
+
+                case "RegiaoNordeste":
+                    _uiUpgradeTransform.transform.Find("ContentNE");
+                    break;
+
+                case "RegiaoCentroOeste":
+                    _uiUpgradeTransform.transform.Find("ContentCO");
+                    break;
+
+                case "RegiaoSudesteSul":
+                    _uiUpgradeTransform.transform.Find("ContentSS");
+                    break;
+
+                default:
+
+                    break;
+
+            }
+        }
     }
 }

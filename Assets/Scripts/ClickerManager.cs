@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 using Unity.Mathematics.Geometry;
+using UnityEngine.SceneManagement;
 
 public class ClickerManager : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class ClickerManager : MonoBehaviour
     [SerializeField] private GameObject _background;
 
     [Space]
-    /*public UpgradePontos[] up;
+    /*public UpgradePontos[] up;[DEPRECATED]
     [SerializeField] private GameObject _uiUpgrade;
     [SerializeField] private Transform _uiUpgradeTransform;*/
     public GameObject PontosPorSeg_Obj;
@@ -28,8 +29,10 @@ public class ClickerManager : MonoBehaviour
     //upgrades
     public double PontosPorSeg_Upgrades { get; set; }
 
-//    private InicializarUpgrades _inicializarUpgrades;
+//private InicializarUpgrades _inicializarUpgrades; [DEPRECATED]
     private DisplayPontos _displayPontos;
+
+    //30/05/2026 - Controle de codigo para ser executado após mudança de cenas
 
     public void Awake()
     {
@@ -40,6 +43,11 @@ public class ClickerManager : MonoBehaviour
 
         _displayPontos = GetComponent<DisplayPontos>();
 
+        //Inicializar componentes cena a cena:
+        _upgradeCanvas = GameObject.Find("Menu_Upgrades");
+        _background = GameObject.Find("BackGround");
+        PontosPorSeg_Obj = GameObject.Find("PontosPorSegundo");
+
         //Atualizar contadores
         AtualizarUIPontos();
         AtualizarUIPontosPorSeg();
@@ -48,22 +56,24 @@ public class ClickerManager : MonoBehaviour
         _upgradeCanvas.SetActive(false);
         MainGameCanvas.SetActive(true);
 
-        //_inicializarUpgrades = GetComponent<InicializarUpgrades>();
-        //_inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);
+        //_inicializarUpgrades = GetComponent<InicializarUpgrades>();[DEPRECATED]
+        //_inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);[DEPRECATED]
+
+        
     }
 
     #region Atualizando UI
 
     private void AtualizarUIPontos()
     {
-       // _textoContadorPontos.text = QuantidadeAtualPontos.ToString();
+       // _textoContadorPontos.text = QuantidadeAtualPontos.ToString();[DEPRECATED]
         _displayPontos.atualizarTextoPontos(QuantidadeAtualPontos, _textoContadorPontos);
     }
 
     private void AtualizarUIPontosPorSeg()
     {
-        //_textoContadorPontosPorSeg.text = QuantidadeAtualPontosPorSeg.ToString() + " p/s";
-        _displayPontos.atualizarTextoPontos(QuantidadeAtualPontosPorSeg, _textoContadorPontosPorSeg, " P/S");
+        //_textoContadorPontosPorSeg.text = QuantidadeAtualPontosPorSeg.ToString() + " p/s";[DEPRECATED]
+        _displayPontos.atualizarTextoPontos(QuantidadeAtualPontosPorSeg, _textoContadorPontosPorSeg, " P/s");
     }
     #endregion
 
@@ -75,17 +85,17 @@ public class ClickerManager : MonoBehaviour
 
         //Utilizando pacote externo DOTween para gerar a animaÃ§Ã£o tÃ­pica de "popup" do elemento ao ser clicado
         _moeda.transform.DOBlendableScaleBy(new Vector3(0.10f, 0.10f, 0.10f), 0.10f).OnComplete(MoedaScaleBack);
-        //this._background.transform.DOBlendableScaleBy(new Vector3(0.03f, 0.03f, 0.03f), 0.03f).OnComplete(BackgroundScaleBack);
+        //this._background.transform.DOBlendableScaleBy(new Vector3(0.03f, 0.03f, 0.03f), 0.03f).OnComplete(BackgroundScaleBack); [DEPRECATED]
     }
     //Metodos private para fazer a parte de "diminuir" a imagem do elemento clicado
     private void MoedaScaleBack()
     {
         _moeda.transform.DOBlendableScaleBy(new Vector3(-0.10f, -0.10f, -0.10f), 0.10f);
     }
-    private void BackgroundScaleBack()
+   /* private void BackgroundScaleBack() [DEPRECATED]
     {
         _background.transform.DOBlendableScaleBy(new Vector3(-0.03f, -0.03f, -0.03f), 0.03f);
-    }
+    }*/
 
     public void GanharMoeda()
     {

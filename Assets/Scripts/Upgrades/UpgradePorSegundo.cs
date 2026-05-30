@@ -7,7 +7,7 @@ public class UpgradePorSegundo : UpgradePontos
     { //verificar quantidade de upgrades para determinar como o ganho de pontos por segundo deve ser feito 
         GameObject gameObject = Instantiate(ClickerManager.instance.PontosPorSeg_Obj, Vector3.zero, Quaternion.identity);
         gameObject.GetComponent<PontosPorSegundoTimer>().PontosPorSegundo = QuantidadeUpgrades;
-
+        DontDestroyOnLoad(gameObject);
         ClickerManager.instance.AumentoDePontosPorSegSimples(QuantidadeUpgrades);
     }
 }

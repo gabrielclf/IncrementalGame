@@ -46,7 +46,7 @@ public class UpgradeManager : MonoBehaviour
                     break;
 
                 default:
-
+                    _uiUpgradeTransform = null;
                     break;
 
             }

@@ -56,7 +56,7 @@
 			<destination>{44f024c4-9e8c-4899-a050-62ad784fabb6}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{e1e0b734-b924-4f81-b02a-a6ee4c8794fb}</destination>
+			<destination>{259cac30-c347-4a33-b9eb-dd2f1ad1a15d}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{5e74e4ff-57b5-4aaa-b8fc-a4ac0d7f4b9e}">
@@ -110,9 +110,6 @@
 	<object class="SingleSound" id="{91055347-d2b1-49a2-ab72-e0754f83fb6b}">
 		<property name="startOffset">
 			<value>34.5</value>
-		</property>
-		<property name="volume">
-			<value>-15</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{167cfce5-b34f-40d2-adef-a462cbfe75e9}</destination>

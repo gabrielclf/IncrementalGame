@@ -1,6 +1,8 @@
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class ClickerSceneÁudioManager : MonoBehaviour
 {   
@@ -27,10 +29,43 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     [SerializeField] EventReference ScreenSlideSound;
 
     
+    public static ClickerSceneÁudioManager Instance { get; private set; }
+        void Awake()
+        {
+            if (Instance != null && Instance != this)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
+        }
+        private void SceneCheck()
+        {
+           if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "RegiaoNorte" && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "RegiaoSudesteSul" && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "RegiaoNordeste" && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "RegiaoCentroOeste" && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "Vitoria")
+            {
+                Destroy(gameObject);
+            }
+        }
 
+        private void OnEnable()
+        {
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+        }
+        private void OnDisable()
+        {
+            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+        }
+        private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+        {
+            SceneCheck();
+        }
+    
     void Start()
     {
-        
+        clickerManager = FindAnyObjectByType<ClickerManager>();
     }
 
     #region OST Activation

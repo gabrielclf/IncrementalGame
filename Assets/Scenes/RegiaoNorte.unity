@@ -279,6 +279,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 899155694}
+        m_TargetAssemblyTypeName: "ClickerScene\xC1udioManager, Assembly-CSharp"
+        m_MethodName: PlayNorteAreaClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &191727473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1155,6 +1167,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1280,6 +1293,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &537864936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,6 +2982,135 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872483932}
   m_CullTransparentMesh: 1
+--- !u!1 &899155692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 899155693}
+  - component: {fileID: 899155694}
+  m_Layer: 0
+  m_Name: Gameplay Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &899155693
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899155692}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 615.8596, y: 251.3435, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &899155694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899155692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e86dc97798c8724db3b729cb9aa298f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::ClickerScene\xC1udioManager"
+  clickerManager: {fileID: 0}
+  GameplayOST:
+    Guid:
+      Data1: 1243761665
+      Data2: 1218302790
+      Data3: -1157589325
+      Data4: -1841201300
+    Path: event:/OSTs/Gameplay
+  MapAmbience:
+    Guid:
+      Data1: -39255120
+      Data2: 1333730774
+      Data3: -2012989012
+      Data4: -1266108830
+    Path: event:/Ambiences/Map
+  ButtonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
+  ButtonHover:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  ConfirmSound:
+    Guid:
+      Data1: -1281604179
+      Data2: 1077800841
+      Data3: -460185695
+      Data4: -822796897
+    Path: event:/SFXs/UI/Confirm
+  DeclineSound:
+    Guid:
+      Data1: 1202847075
+      Data2: 1259096185
+      Data3: -1967964747
+      Data4: 1274207173
+    Path: event:/SFXs/UI/Decline
+  AreaUnlockSound:
+    Guid:
+      Data1: -606009036
+      Data2: 1254083563
+      Data3: -722319467
+      Data4: 2099259720
+    Path: event:/SFXs/Scenery/Area Unlock
+  NorteAreaClickSound:
+    Guid:
+      Data1: -2081727654
+      Data2: 1079102599
+      Data3: 2042145418
+      Data4: -833114015
+    Path: event:/SFXs/Scenery/Area Click Norte
+  SulSudesteAreaClickSound:
+    Guid:
+      Data1: -814036195
+      Data2: 1243381947
+      Data3: -1856648314
+      Data4: -1428245804
+    Path: event:/SFXs/Scenery/Area Click SudesteSul
+  NordesteAreaClickSound:
+    Guid:
+      Data1: 1092254990
+      Data2: 1307259548
+      Data3: -782963282
+      Data4: 145435560
+    Path: event:/SFXs/Scenery/Area Click Nordeste
+  OesteAreaClickSound:
+    Guid:
+      Data1: 1101349779
+      Data2: 1166007949
+      Data3: 1668200622
+      Data4: 1310304056
+    Path: event:/SFXs/Scenery/Area Click Centro Oeste
+  ScreenSlideSound:
+    Guid:
+      Data1: 182736266
+      Data2: 1326449758
+      Data3: -1671042121
+      Data4: -1920030468
+    Path: event:/SFXs/UI/ScreenSlideIn
 --- !u!1 &911985033
 GameObject:
   m_ObjectHideFlags: 0
@@ -6398,3 +6554,4 @@ SceneRoots:
   - {fileID: 8978203118793162478}
   - {fileID: 2135400622}
   - {fileID: 1275911233}
+  - {fileID: 899155693}

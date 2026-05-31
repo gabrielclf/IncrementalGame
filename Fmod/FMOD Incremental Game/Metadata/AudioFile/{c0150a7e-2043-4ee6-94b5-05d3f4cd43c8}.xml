@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{c0150a7e-2043-4ee6-94b5-05d3f4cd43c8}">
+		<property name="assetPath">
+			<value>SFXs/Deny_Sound.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.29147392290249435</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{85c0a20d-3fc9-4c8e-bdfd-690c1b78ba75}</destination>
+		</relationship>
+	</object>
+</objects>

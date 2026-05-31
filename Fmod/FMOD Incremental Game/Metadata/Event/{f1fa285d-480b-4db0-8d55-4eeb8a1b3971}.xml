@@ -5,7 +5,7 @@
 			<value>Cant Afford</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{89b65241-d836-46d6-8b0d-41dafa35a6d3}</destination>
@@ -82,7 +82,11 @@
 			<destination>{333b5738-c82f-4e49-8551-bbc549e410f9}</destination>
 		</relationship>
 	</object>
-	<object class="MultiSound" id="{7c22f366-93c0-485c-a781-e4db6ee632f9}" />
+	<object class="MultiSound" id="{7c22f366-93c0-485c-a781-e4db6ee632f9}">
+		<relationship name="sounds">
+			<destination>{83571566-a1d3-4451-a94b-9f293fb63c9b}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{610dc40a-fb0c-457a-81c6-e6b4e26c8820}">
 		<relationship name="effects">
 			<destination>{3fc497b5-2ac4-4216-a87c-c7705c2e62fc}</destination>
@@ -95,6 +99,42 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f18d6aca-2d48-4601-89d1-ef1184b96e2e}" />
+	<object class="MultiSound" id="{83571566-a1d3-4451-a94b-9f293fb63c9b}">
+		<property name="volume">
+			<value>-2</value>
+		</property>
+		<property name="playlistMode">
+			<value>1</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{ca5cef54-ae12-4a2a-86b9-6c4bea1c8ec7}</destination>
+			<destination>{9fef94b0-65c3-4e97-ac17-8b028924d6da}</destination>
+		</relationship>
+		<relationship name="sounds">
+			<destination>{32ff7315-c805-4676-a51c-646c05d71398}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{3fc497b5-2ac4-4216-a87c-c7705c2e62fc}" />
 	<object class="MixerBusFader" id="{f96837d3-f7b7-407a-adba-930dcbc0d267}" />
+	<object class="RandomizerModulator" id="{ca5cef54-ae12-4a2a-86b9-6c4bea1c8ec7}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>pitch</value>
+		</property>
+		<property name="amount">
+			<value>2.5</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{9fef94b0-65c3-4e97-ac17-8b028924d6da}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>2</value>
+		</property>
+	</object>
+	<object class="SingleSound" id="{32ff7315-c805-4676-a51c-646c05d71398}">
+		<relationship name="audioFile">
+			<destination>{c0150a7e-2043-4ee6-94b5-05d3f4cd43c8}</destination>
+		</relationship>
+	</object>
 </objects>

@@ -6,14 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class ClickerSceneÁudioManager : MonoBehaviour
 {   
-    // Referencia ao ClickerManager para acessar checkar a ativação método de 
+    #region Variables
+    // referências de managers
     [Header("Code References")]
     [SerializeField] ClickerManager clickerManager;
     
     // Referências de Loops a serem tocados
     [Header("OSTs e Ambiences")]
     [SerializeField] EventReference GameplayOST;
+    EventInstance GameplayOSTInstance;
     [SerializeField] EventReference MapAmbience;
+    EventInstance MapAmbienceInstance;
 
     // Referencia de Sons a serem tocados;
     [Header("SFXs")]
@@ -28,7 +31,9 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     [SerializeField] EventReference OesteAreaClickSound;
     [SerializeField] EventReference ScreenSlideSound;
 
-    
+    #endregion
+
+    #region Scene Permanence 
     public static ClickerSceneÁudioManager Instance { get; private set; }
         void Awake()
         {
@@ -44,37 +49,55 @@ public class ClickerSceneÁudioManager : MonoBehaviour
         }
         private void SceneCheck()
         {
-           if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "RegiaoNorte" && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "RegiaoSudesteSul" && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "RegiaoNordeste" && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "RegiaoCentroOeste" && UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "Vitoria")
+           if(SceneManager.GetActiveScene().name != "RegiaoNorte" && SceneManager.GetActiveScene().name != "RegiaoSudesteSul" && SceneManager.GetActiveScene().name != "RegiaoNordeste" && SceneManager.GetActiveScene().name != "RegiaoCentroOeste" && SceneManager.GetActiveScene().name != "Vitoria")
             {
+                StopAmbience();
+                StopOSTs();
                 Destroy(gameObject);
+            }
+            else
+            {
+             clickerManager = FindAnyObjectByType<ClickerManager>();
             }
         }
 
         private void OnEnable()
         {
-            UnityEngine.SceneManagement.SceneManager.sceneLoaded += OnSceneLoaded;
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         private void OnDisable()
         {
-            UnityEngine.SceneManagement.SceneManager.sceneLoaded -= OnSceneLoaded;
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
-        private void OnSceneLoaded(UnityEngine.SceneManagement.Scene scene, UnityEngine.SceneManagement.LoadSceneMode mode)
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             SceneCheck();
+            
         }
+        #endregion
     
     void Start()
-    {
+    {   
+        #region OST e AMB Activation
         clickerManager = FindAnyObjectByType<ClickerManager>();
+        GameplayOSTInstance = RuntimeManager.CreateInstance(GameplayOST);
+        MapAmbienceInstance = RuntimeManager.CreateInstance(MapAmbience);
+        GameplayOSTInstance.start();
+        MapAmbienceInstance.start();
+         #endregion
+    }
+    void StopOSTs()
+    {
+        GameplayOSTInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        GameplayOSTInstance.release();
+       
+    }
+    void StopAmbience()
+    {
+        MapAmbienceInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        MapAmbienceInstance.release();
     }
 
-    #region OST Activation
-
-    #endregion
-
-    #region Ambience Activation / Change
-
-    #endregion
 
     #region UI Actions
     public void PlayButtonClickSound()

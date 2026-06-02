@@ -47,7 +47,23 @@ public class ClickerManager : MonoBehaviour
         AtualizarUIPontos();
         AtualizarUIPontosPorSeg();
 
-        //Inicializar componentes cena a cena:
+       
+        //_inicializarUpgrades = GetComponent<InicializarUpgrades>();[DEPRECATED]
+        //_inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);[DEPRECATED]
+
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+          //Inicializar componentes cena a cena:
         _upgradeCanvas = GameObject.Find("Menu_Upgrades");
         _background = GameObject.Find("BackGround");
         PontosPorSeg_Obj = GameObject.Find("PontosPorSegundo");
@@ -55,12 +71,8 @@ public class ClickerManager : MonoBehaviour
         //Exibir janela do jogo ou janela de upgrades
         _upgradeCanvas.SetActive(false);
         MainGameCanvas.SetActive(true);
-
-        //_inicializarUpgrades = GetComponent<InicializarUpgrades>();[DEPRECATED]
-        //_inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);[DEPRECATED]
-
-
     }
+
 
     #region Atualizando UI
 

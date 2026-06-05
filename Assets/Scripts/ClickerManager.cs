@@ -29,7 +29,7 @@ public class ClickerManager : MonoBehaviour
     //upgrades
     public double PontosPorSeg_Upgrades { get; set; }
 
-//private InicializarUpgrades _inicializarUpgrades; [DEPRECATED]
+    //private InicializarUpgrades _inicializarUpgrades; [DEPRECATED]
     private DisplayPontos _displayPontos;
 
     //30/05/2026 - Controle de codigo para ser executado após mudança de cenas
@@ -43,30 +43,42 @@ public class ClickerManager : MonoBehaviour
 
         _displayPontos = GetComponent<DisplayPontos>();
 
-        //Inicializar componentes cena a cena:
-        _upgradeCanvas = GameObject.Find("Menu_Upgrades");
-        _background = GameObject.Find("BackGround");
-        PontosPorSeg_Obj = GameObject.Find("PontosPorSegundo");
-
         //Atualizar contadores
         AtualizarUIPontos();
         AtualizarUIPontosPorSeg();
 
-        //Exibir janela do jogo ou janela de upgrades
-        _upgradeCanvas.SetActive(false);
-        MainGameCanvas.SetActive(true);
-
+       
         //_inicializarUpgrades = GetComponent<InicializarUpgrades>();[DEPRECATED]
         //_inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);[DEPRECATED]
 
-        
     }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+          //Inicializar componentes cena a cena:
+        _upgradeCanvas = GameObject.Find("Menu_Upgrades");
+        _background = GameObject.Find("BackGround");
+        PontosPorSeg_Obj = GameObject.Find("PontosPorSegundo");
+
+        //Exibir janela do jogo ou janela de upgrades
+        _upgradeCanvas.SetActive(false);
+        MainGameCanvas.SetActive(true);
+    }
+
 
     #region Atualizando UI
 
     private void AtualizarUIPontos()
     {
-       // _textoContadorPontos.text = QuantidadeAtualPontos.ToString();[DEPRECATED]
+        // _textoContadorPontos.text = QuantidadeAtualPontos.ToString();[DEPRECATED]
         _displayPontos.atualizarTextoPontos(QuantidadeAtualPontos, _textoContadorPontos);
     }
 
@@ -92,10 +104,10 @@ public class ClickerManager : MonoBehaviour
     {
         _moeda.transform.DOBlendableScaleBy(new Vector3(-0.10f, -0.10f, -0.10f), 0.10f);
     }
-   /* private void BackgroundScaleBack() [DEPRECATED]
-    {
-        _background.transform.DOBlendableScaleBy(new Vector3(-0.03f, -0.03f, -0.03f), 0.03f);
-    }*/
+    /* private void BackgroundScaleBack() [DEPRECATED]
+     {
+         _background.transform.DOBlendableScaleBy(new Vector3(-0.03f, -0.03f, -0.03f), 0.03f);
+     }*/
 
     public void GanharMoeda()
     {
@@ -154,8 +166,8 @@ public class ClickerManager : MonoBehaviour
             AtualizarUIPontos();
 
             //aumentar preço de proximos upgrade e seus numeros na interface
-            upgrade.CustoAtualUpgrade = Mathf.Round((float)((upgrade.CustoAtualUpgrade)*(1 + upgrade.MultiplicadorAumentoCustoPorUpgrade)));
-            referenciaBotao.TextoCustoUpgrade.text = "Custo: "+ upgrade.CustoAtualUpgrade;
+            upgrade.CustoAtualUpgrade = Mathf.Round((float)((upgrade.CustoAtualUpgrade) * (1 + upgrade.MultiplicadorAumentoCustoPorUpgrade)));
+            referenciaBotao.TextoCustoUpgrade.text = "Custo: " + upgrade.CustoAtualUpgrade;
         }
     }
     #endregion

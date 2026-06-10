@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{7227d481-b0e1-4c8e-93f0-f5b55e729507}">
+		<property name="name">
+			<value>Music</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{97045e0e-9804-45b6-b60a-b1e3ecc5b81c}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{34ad0fd6-a94c-4f25-8934-690782874422}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{a3058434-7063-4a64-a5e5-b27f8216b623}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{97045e0e-9804-45b6-b60a-b1e3ecc5b81c}">
+		<relationship name="effects">
+			<destination>{afed47ee-a410-44ad-8732-1417eb08cdad}</destination>
+			<destination>{fad97b02-a453-4273-b5d3-d3df5856ecf0}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{34ad0fd6-a94c-4f25-8934-690782874422}" />
+	<object class="MixerBusFader" id="{afed47ee-a410-44ad-8732-1417eb08cdad}" />
+	<object class="LowpassEffect" id="{fad97b02-a453-4273-b5d3-d3df5856ecf0}">
+		<property name="wetDryEnabled">
+			<value>true</value>
+		</property>
+	</object>
+</objects>

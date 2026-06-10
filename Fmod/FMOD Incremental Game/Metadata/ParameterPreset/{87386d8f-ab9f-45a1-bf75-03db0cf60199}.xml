@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{87386d8f-ab9f-45a1-bf75-03db0cf60199}">
+		<property name="name">
+			<value>Player Area</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ad364eb0-6468-4408-84b7-2db04728fc5b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{64a80022-02bd-42be-add8-245684de7443}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{64a80022-02bd-42be-add8-245684de7443}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Norte</value>
+			<value>Nordeste</value>
+			<value>CentroOeste</value>
+			<value>SudesteSul</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

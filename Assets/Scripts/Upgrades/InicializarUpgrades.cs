@@ -24,6 +24,13 @@ public class InicializarUpgrades : MonoBehaviour
 
             //setar eventos onClick em botões dinamicamente criados
             butt.BotaoUpgrade.onClick.AddListener(delegate {ClickerManager.instance.ClicarBotaoUpgrade(upgrades[id_Atual], butt); });
+
+            //setar upgradeData no audio manager
+            UpgradesAudioManager audioManager = go.GetComponentInChildren<UpgradesAudioManager>();
+            if (audioManager != null)
+                audioManager.upgradeData = upgrades[id_Atual];
+            else
+                Debug.LogWarning("InicializarUpgrades: UpgradesAudioManager not found on upgrade prefab: " + go.name);
         }
     }
 }

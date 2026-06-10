@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{f4b25451-552d-4965-ad18-5cf2c3f8260d}">
+		<property name="assetPath">
+			<value>OSTs/Gameplay/ost_nordeste_gameproduction.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>42.857145833333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{85c0a20d-3fc9-4c8e-bdfd-690c1b78ba75}</destination>
+		</relationship>
+	</object>
+</objects>

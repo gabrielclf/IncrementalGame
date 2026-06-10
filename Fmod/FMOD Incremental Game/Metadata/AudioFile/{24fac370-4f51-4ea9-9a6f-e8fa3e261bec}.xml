@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{24fac370-4f51-4ea9-9a6f-e8fa3e261bec}">
+		<property name="assetPath">
+			<value>Ambiences/IG_AMB_Map_Animal6.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>17.655083333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{85c0a20d-3fc9-4c8e-bdfd-690c1b78ba75}</destination>
+		</relationship>
+	</object>
+</objects>

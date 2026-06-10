@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{3bf39aaa-72f7-4b8e-91c5-075193c5ef0a}">
+		<property name="assetPath">
+			<value>SFXs/IG_SFX_Decline .wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0044444444444445</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{85c0a20d-3fc9-4c8e-bdfd-690c1b78ba75}</destination>
+		</relationship>
+	</object>
+</objects>

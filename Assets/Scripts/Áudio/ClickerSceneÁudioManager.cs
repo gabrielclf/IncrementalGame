@@ -10,6 +10,7 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     // referências de managers
     [Header("Code References")]
     [SerializeField] ClickerManager clickerManager;
+    [SerializeField] string Scene;
     
     // Referências de Loops a serem tocados
     [Header("OSTs e Ambiences")]
@@ -49,7 +50,7 @@ public class ClickerSceneÁudioManager : MonoBehaviour
         }
         private void SceneCheck()
         {
-           if(SceneManager.GetActiveScene().name != "RegiaoNorte" && SceneManager.GetActiveScene().name != "RegiaoSudesteSul" && SceneManager.GetActiveScene().name != "RegiaoNordeste" && SceneManager.GetActiveScene().name != "RegiaoCentroOeste" && SceneManager.GetActiveScene().name != "Vitoria")
+           if(SceneManager.GetActiveScene().name != "RegiaoNorte" && SceneManager.GetActiveScene().name != "RegiaoSudesteSul" && SceneManager.GetActiveScene().name != "RegiaoNordeste" && SceneManager.GetActiveScene().name != "RegiaoCentroOeste" )
             {
                 StopAmbience();
                 StopOSTs();
@@ -72,6 +73,7 @@ public class ClickerSceneÁudioManager : MonoBehaviour
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             SceneCheck();
+            changeAreaParameter();
             
         }
         #endregion
@@ -133,10 +135,40 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     }
     #endregion
 
+    float getScene()
+    {
+        Scene = SceneManager.GetActiveScene().name;
+        if (Scene == "RegiaoNorte")
+        {
+            return 0;
+        }
+        if (Scene == "RegiaoNordeste")
+        {
+            return 1;
+        }
+        if (Scene == "RegiaoCentroOeste")
+            {
+            return 2;
+            }
+        if (Scene == "RegiaoSudesteSul")
+                {
+            return 3;
+                }
+        if (Scene == "Vitoria")
+        {
+            return 0;
+        }
+        return 0;
+        
+    }
+    void changeAreaParameter()
+    {
+        RuntimeManager.StudioSystem.setParameterByName("Player Area", getScene());
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
+    
     }
 }

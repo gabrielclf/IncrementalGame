@@ -91,7 +91,7 @@
 	</object>
 	<object class="MultiSound" id="{3c1ff240-d6ec-42b1-adc5-520287e6ef9d}">
 		<relationship name="sounds">
-			<destination>{91055347-d2b1-49a2-ab72-e0754f83fb6b}</destination>
+			<destination>{cbb1b69d-a58e-4fa7-8e51-082cd44edc4a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{50dc48e0-489d-4954-bd27-02e0b4f4859a}">
@@ -107,13 +107,13 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{69c53b1a-df06-4d48-bf20-e95ab0cb5bc2}" />
-	<object class="SingleSound" id="{91055347-d2b1-49a2-ab72-e0754f83fb6b}">
+	<object class="SingleSound" id="{cbb1b69d-a58e-4fa7-8e51-082cd44edc4a}">
 		<relationship name="modulators">
-			<destination>{167cfce5-b34f-40d2-adef-a462cbfe75e9}</destination>
-			<destination>{0ab9f6e7-f22b-47e2-a8a2-73a9a28b2058}</destination>
+			<destination>{92985cf3-3f4e-4390-9cfc-fe2e49a54051}</destination>
+			<destination>{1bd4bc84-b531-424e-bd78-3027c0a53ccd}</destination>
 		</relationship>
 		<relationship name="audioFile">
-			<destination>{091de122-5b8c-4a8c-84f8-cda577bc7897}</destination>
+			<destination>{08bb2c06-fd89-4294-8dbf-5588bdb13305}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{5f16da8a-f1b1-4ec8-83ff-28133bb8e494}" />
@@ -123,35 +123,20 @@
 			<value>0</value>
 		</property>
 	</object>
-	<object class="RandomizerModulator" id="{167cfce5-b34f-40d2-adef-a462cbfe75e9}">
+	<object class="RandomizerModulator" id="{92985cf3-3f4e-4390-9cfc-fe2e49a54051}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>0.5</value>
+			<value>2</value>
 		</property>
 	</object>
-	<object class="ADSRModulator" id="{0ab9f6e7-f22b-47e2-a8a2-73a9a28b2058}">
+	<object class="RandomizerModulator" id="{1bd4bc84-b531-424e-bd78-3027c0a53ccd}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
 		</property>
-		<property name="initialValue">
-			<value>-80</value>
-		</property>
-		<property name="attackTime">
-			<value>85.3846359</value>
-		</property>
-		<property name="peakValue">
-			<value>-19.0666676</value>
-		</property>
-		<property name="holdTime">
-			<value>0</value>
-		</property>
-		<property name="decayTime">
-			<value>326.923096</value>
-		</property>
-		<property name="finalValue">
-			<value>-80</value>
+		<property name="amount">
+			<value>4.5</value>
 		</property>
 	</object>
 </objects>

@@ -22,7 +22,7 @@ public class InicializarUpgrades : MonoBehaviour
             butt.TextoDescricaoUpgrade.SetText(upgrades[id_Atual].TextoDescricaoUpgrade, upgrades[id_Atual].QuantidadeUpgrades);
             butt.TextoCustoUpgrade.text = "Custo: "+ upgrades[id_Atual].CustoAtualUpgrade;
             //11/06/26 - Inserindo assets de imagens
-            butt.Ilustracao = upgrades[id_Atual].background;
+            butt.Ilustracao.sprite = upgrades[id_Atual]._imagem;
 
             //setar eventos onClick em botões dinamicamente criados
             butt.BotaoUpgrade.onClick.AddListener(delegate {ClickerManager.instance.ClicarBotaoUpgrade(upgrades[id_Atual], butt); });

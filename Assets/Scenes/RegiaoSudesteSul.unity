@@ -2036,7 +2036,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeManager
   _moeda: {fileID: 0}
-  _upgrades: []
+  _upgrades:
+  - {fileID: 11400000, guid: e2a18f8d316e1554cbf7e138c0a0b823, type: 2}
+  - {fileID: 11400000, guid: 5fedc0e4d69897841904b9dffbcf96e4, type: 2}
   _uiUpgrade: {fileID: 3694944526701586740, guid: 5b20d7ae755b4444b90374d75e4bddb0, type: 3}
   _uiUpgradeTransform: {fileID: 1731301323}
 --- !u!1 &1611894794

@@ -9,5 +9,7 @@ public class UpgradeButtons : MonoBehaviour
     public TextMeshProUGUI TextoBotaoUpgrade;
     public TextMeshProUGUI TextoDescricaoUpgrade;
     public TextMeshProUGUI TextoCustoUpgrade;
+    // Inserir Imagem
+    public Image Ilustracao;
     
 }

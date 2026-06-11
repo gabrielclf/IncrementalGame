@@ -349,6 +349,104 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9033160741863437965, guid: 605c1bf528b7ce241974122285c2f59d, type: 3}
   m_PrefabInstance: {fileID: 2213151144281117558}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &364573859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364573853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1692887059
+      Data2: 1255533544
+      Data3: -789208405
+      Data4: -861774494
+    Path: event:/SFXs/UI/ScreenSlideOut
+  Event: 
+  EventPlayTrigger: 12
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: Menu Direction
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &364573860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364573853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 182736266
+      Data2: 1326449758
+      Data3: -1671042121
+      Data4: -1920030468
+    Path: event:/SFXs/UI/ScreenSlideIn
+  Event: 
+  EventPlayTrigger: 11
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params:
+  - Name: Menu Direction
+    Value: 2
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &364573861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364573853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioGlobalParameterTrigger
+  CollisionTag: 
+  Parameter: Game State
+  TriggerEvent: 12
+  Value: 0
+--- !u!114 &364573862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364573853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioGlobalParameterTrigger
+  CollisionTag: 
+  Parameter: Game State
+  TriggerEvent: 11
+  Value: 1
 --- !u!1 &364820371
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1415,13 @@ MonoBehaviour:
       Data3: -404957266
       Data4: 626311105
     Path: event:/OSTs/Tela Inicial
+  GameplaySnapshot:
+    Guid:
+      Data1: 1615461623
+      Data2: 1283078398
+      Data3: -208297855
+      Data4: 592975603
+    Path: event:/Snapshots/Game State
 --- !u!4 &1578500999
 Transform:
   m_ObjectHideFlags: 0
@@ -1492,18 +1597,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
   Button_Hover:
     Guid:
-      Data1: -2093147432
-      Data2: 1334818052
-      Data3: -1467502407
-      Data4: -972598990
-    Path: event:/SFXs/UI/Button Hover
+      Data1: -1778526517
+      Data2: 1121943931
+      Data3: -1875186515
+      Data4: -1856730094
+    Path: event:/SFXs/Title Screen/Title Hover
   Button_Click:
     Guid:
-      Data1: -271184925
-      Data2: 1137006064
-      Data3: 1915184539
-      Data4: 450884697
-    Path: event:/SFXs/UI/Button Click
+      Data1: 1202847075
+      Data2: 1259096185
+      Data3: -1967964747
+      Data4: 1274207173
+    Path: event:/SFXs/UI/Decline
 --- !u!1 &1769139458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,18 +1953,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
   Button_Hover:
     Guid:
-      Data1: -2093147432
-      Data2: 1334818052
-      Data3: -1467502407
-      Data4: -972598990
-    Path: event:/SFXs/UI/Button Hover
+      Data1: -1778526517
+      Data2: 1121943931
+      Data3: -1875186515
+      Data4: -1856730094
+    Path: event:/SFXs/Title Screen/Title Hover
   Button_Click:
     Guid:
-      Data1: -271184925
-      Data2: 1137006064
-      Data3: 1915184539
-      Data4: 450884697
-    Path: event:/SFXs/UI/Button Click
+      Data1: -764613862
+      Data2: 1262223166
+      Data3: 712689305
+      Data4: -1475389674
+    Path: event:/SFXs/Title Screen/Title Click
 --- !u!1001 &2213151144281117558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2055,7 +2160,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9033160741863437965, guid: 605c1bf528b7ce241974122285c2f59d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364573860}
+    - targetCorrespondingSourceObject: {fileID: 9033160741863437965, guid: 605c1bf528b7ce241974122285c2f59d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364573859}
+    - targetCorrespondingSourceObject: {fileID: 9033160741863437965, guid: 605c1bf528b7ce241974122285c2f59d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364573862}
+    - targetCorrespondingSourceObject: {fileID: 9033160741863437965, guid: 605c1bf528b7ce241974122285c2f59d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 364573861}
   m_SourcePrefab: {fileID: 100100000, guid: 605c1bf528b7ce241974122285c2f59d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

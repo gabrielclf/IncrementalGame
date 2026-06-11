@@ -19,6 +19,10 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     [SerializeField] EventReference MapAmbience;
     EventInstance MapAmbienceInstance;
 
+    //Referencia de Snapshots
+    [SerializeField] EventReference GameplaySnapshot;
+    [SerializeField] EventInstance GameplaySnapshotInstance;
+
     // Referencia de Sons a serem tocados;
     [Header("SFXs")]
     [SerializeField] EventReference ButtonClickSound;
@@ -86,6 +90,8 @@ public class ClickerSceneÁudioManager : MonoBehaviour
         MapAmbienceInstance = RuntimeManager.CreateInstance(MapAmbience);
         GameplayOSTInstance.start();
         MapAmbienceInstance.start();
+        GameplaySnapshotInstance = RuntimeManager.CreateInstance(GameplaySnapshot);
+        GameplaySnapshotInstance.start();
          #endregion
     }
     void StopOSTs()

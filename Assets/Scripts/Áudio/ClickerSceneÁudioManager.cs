@@ -66,7 +66,12 @@ public class ClickerSceneÁudioManager : MonoBehaviour
             }
             else
             {
-             clickerManager = FindAnyObjectByType<ClickerManager>();
+            clickerManager = FindAnyObjectByType<ClickerManager>();
+            GameObject mainCamera = GameObject.FindWithTag("MainCamera");
+            if (mainCamera != null)
+                {
+                    RuntimeManager.AttachInstanceToGameObject(MapAmbienceInstance, mainCamera);
+                }
             }
         }
 
@@ -92,6 +97,11 @@ public class ClickerSceneÁudioManager : MonoBehaviour
         clickerManager = FindAnyObjectByType<ClickerManager>();
         GameplayOSTInstance = RuntimeManager.CreateInstance(GameplayOST);
         MapAmbienceInstance = RuntimeManager.CreateInstance(MapAmbience);
+        GameObject mainCamera = GameObject.FindWithTag("MainCamera");
+        if (mainCamera != null)
+        {
+            RuntimeManager.AttachInstanceToGameObject(MapAmbienceInstance, mainCamera);
+        }
         GameplayOSTInstance.start();
         MapAmbienceInstance.start();
         GameplaySnapshotInstance = RuntimeManager.CreateInstance(GameplaySnapshot);

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TesteIbagem 2
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: T2
-  _imagem: {fileID: 1026639995540293208, guid: 01b914a3b3ec733498603d3a5d004fcc, type: 3}
+  _imagem: {fileID: -4776734629664174619, guid: 46c987b4a6e6be445a4c2a91525458fb, type: 3}
   QuantidadeUpgrades: 1
   CustoOriginalUpgrade: 100
   CustoAtualUpgrade: 100

@@ -125,11 +125,11 @@ public class ClickerManager : MonoBehaviour
         _upgradeCanvas.SetActive(true);
     }
 
-    public void ApertarBotaoVoltarJogo()
-    {
+    /*public void ApertarBotaoVoltarJogo()
+    { [DEPRECATED] - Operação feita dentro do unity editor
         _upgradeCanvas.SetActive(false);
         MainGameCanvas.SetActive(true);
-    }
+    }*/ 
 
     #endregion
 

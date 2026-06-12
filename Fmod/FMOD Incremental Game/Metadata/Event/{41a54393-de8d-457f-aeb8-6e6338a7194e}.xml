@@ -125,7 +125,7 @@
 			<value>-1</value>
 		</property>
 		<property name="highGain">
-			<value>-7.5</value>
+			<value>-5</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{13ad9128-e78a-479a-b24e-99b29f8ff2f5}</destination>

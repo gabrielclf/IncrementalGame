@@ -19,7 +19,7 @@ public class MainMenuAudioManage : MonoBehaviour
         GameplaySnapshotInstance = RuntimeManager.CreateInstance(GameplaySnapshot);
         GameplaySnapshotInstance.start();
     }
-    void Oestroy()
+    void OnDestroy()
     {
       StopMusic(); 
       stopSnapshot(); 

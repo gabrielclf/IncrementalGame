@@ -706,7 +706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PROJETO CLIMA
+  m_text: "Opera\xE7\xE3o CLIMA"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2cf2c06e2924874448e9a2f1f1568bfd, type: 2}
   m_sharedMaterial: {fileID: -3261479641899503524, guid: 2cf2c06e2924874448e9a2f1f1568bfd, type: 2}
@@ -1574,8 +1574,6 @@ MonoBehaviour:
       Data3: -1967964747
       Data4: 1274207173
     Path: event:/SFXs/UI/Decline
-  ScreenCenter: {fileID: 0}
-  ScreenCenterDistance: 1
 --- !u!1 &1769139458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1760,8 +1758,6 @@ MonoBehaviour:
       Data3: -1984087902
       Data4: -586791178
     Path: event:/SFXs/UI/Options Click
-  ScreenCenter: {fileID: 0}
-  ScreenCenterDistance: 1
 --- !u!1 &2144735538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,8 +1930,6 @@ MonoBehaviour:
       Data3: 712689305
       Data4: -1475389674
     Path: event:/SFXs/Title Screen/Title Click
-  ScreenCenter: {fileID: 0}
-  ScreenCenterDistance: 1
 --- !u!1001 &2213151144281117558
 PrefabInstance:
   m_ObjectHideFlags: 0

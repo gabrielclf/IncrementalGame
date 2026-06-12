@@ -6,18 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class AudioSettings : MonoBehaviour
 {
-   [Header("Audio tests")]
-    [SerializeField] private EventInstance SFXtestEvent;
-    [SerializeField] private EventReference SFXtestEventRef;
-    [SerializeField] private EventInstance MusictestEvent;
-    [SerializeField] private EventReference MusictestEventRef;
-    [SerializeField] private EventInstance AmbiencetestEvent;
-    [SerializeField] private EventReference AmbiencetestEventRef;
-    [SerializeField] private EventInstance VOtestEvent;
-    [SerializeField] private EventReference VOtestEventRef;
-    [SerializeField] private EventInstance MastertestEvent;
-    [SerializeField] private EventReference MastertestEventRef;
-
     [Header("Audio Buses")]
     private Bus Music;
     private Bus SFX;
@@ -92,63 +80,26 @@ public class AudioSettings : MonoBehaviour
     public void SetMusicVolume(float newMusicVolume)
     {
         musicVolume = newMusicVolume;
-        PLAYBACK_STATE musicState;
-        MusictestEvent.getPlaybackState(out musicState);
-        if (musicState != PLAYBACK_STATE.PLAYING)
-        {
-            MusictestEvent.start();
-            StartCoroutine(StopMusicTestEvent());
-        }
-    }
-    // stop the test sound after a delay 
-    IEnumerator StopMusicTestEvent()
-    {
-        yield return new WaitForSeconds(1f);
-        MusictestEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
     }
 
     // set the volume levels to slider values and play a test sound when the volume is changed
     public void SetSFXVolume(float newSFXVolume)
     {
         SFXVolume = newSFXVolume;
-        PLAYBACK_STATE sfxState;
-        SFXtestEvent.getPlaybackState(out sfxState);
-        if (sfxState != PLAYBACK_STATE.PLAYING)
-        {
-            SFXtestEvent.start();
-        }
+
     }
 
     // set the volume levels to slider values and play a test sound when the volume is changed
     public void SetAmbienceVolume(float newAmbienceVolume)
     {
         ambienceVolume = newAmbienceVolume;
-        PLAYBACK_STATE ambienceState;
-        AmbiencetestEvent.getPlaybackState(out ambienceState);
-        if (ambienceState != PLAYBACK_STATE.PLAYING)
-        {
-            AmbiencetestEvent.start();
-            StartCoroutine(StopAmbienceTestEvent());
-        }
-    }
-
-    // stop the test sound after a delay 
-    IEnumerator StopAmbienceTestEvent()
-    {
-        yield return new WaitForSeconds(1f);
-        AmbiencetestEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     // set the volume levels to slider values and play a test sound when the volume is changed
     public void SetVOVolume(float newVOVolume)
     {
         VOVolume = newVOVolume;
-        PLAYBACK_STATE voState;
-        VOtestEvent.getPlaybackState(out voState);
-        if (voState != PLAYBACK_STATE.PLAYING)
-        {
-            VOtestEvent.start();
-        }
     }
 
     // set the volume levels to slider values 

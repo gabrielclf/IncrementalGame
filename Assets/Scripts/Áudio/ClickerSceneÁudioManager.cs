@@ -122,30 +122,39 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     #region Area Click Sounds
     public void PlayNorteAreaClickSound()
     {
-        RuntimeManager.PlayOneShot(NorteAreaClickSound);
+        switch (getScene())
+        {
+            case 0:
+                RuntimeManager.PlayOneShot(NorteAreaClickSound);
+            break;
+
+            case 1:
+                RuntimeManager.PlayOneShot(NordesteAreaClickSound);
+            break;
+
+            case 2:
+                RuntimeManager.PlayOneShot(OesteAreaClickSound);
+            break;
+
+            case 3:
+                RuntimeManager.PlayOneShot(SulSudesteAreaClickSound);
+            break;
+
+            default:
+                RuntimeManager.PlayOneShot(NorteAreaClickSound);
+            break;
+        }
     }
 
-    public void PlaySulSudesteAreaClickSound()
-    {
-        RuntimeManager.PlayOneShot(SulSudesteAreaClickSound);
-    }
-
-    public void PlayNordesteAreaClickSound()
-    {
-        RuntimeManager.PlayOneShot(NordesteAreaClickSound);
-    }
-
-    public void PlayOesteAreaClickSound()
-    {
-        RuntimeManager.PlayOneShot(OesteAreaClickSound);
-    }
+    
     #endregion
 
     float getScene()
     {
         Scene = SceneManager.GetActiveScene().name;
         if (Scene == "RegiaoNorte")
-        {
+        {   
+
             return 0;
         }
         if (Scene == "RegiaoNordeste")

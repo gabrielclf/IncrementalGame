@@ -76,27 +76,27 @@ public class AudioSettings : MonoBehaviour
         Master.setVolume(masterVolume);
     }
 
-    // set the volume levels to slider values and play a test sound when the volume is changed
+    // set the volume levels to slider values 
     public void SetMusicVolume(float newMusicVolume)
     {
         musicVolume = newMusicVolume;
 
     }
 
-    // set the volume levels to slider values and play a test sound when the volume is changed
+    // set the volume levels to slider values 
     public void SetSFXVolume(float newSFXVolume)
     {
         SFXVolume = newSFXVolume;
 
     }
 
-    // set the volume levels to slider values and play a test sound when the volume is changed
+    // set the volume levels to slider values 
     public void SetAmbienceVolume(float newAmbienceVolume)
     {
         ambienceVolume = newAmbienceVolume;
     }
 
-    // set the volume levels to slider values and play a test sound when the volume is changed
+    // set the volume levels to slider values 
     public void SetVOVolume(float newVOVolume)
     {
         VOVolume = newVOVolume;

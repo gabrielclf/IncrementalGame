@@ -7,10 +7,14 @@ using UnityEngine.SceneManagement;
 public class ClickerSceneÁudioManager : MonoBehaviour
 {   
     #region Variables
+    [Header("Variables")]
+    [SerializeField] private float ScreenCenterDistance = 1f;
+
     // referências de managers
     [Header("Code References")]
     [SerializeField] ClickerManager clickerManager;
     [SerializeField] string Scene;
+    [SerializeField] private GameObject ScreenCenter;
     
     // Referências de Loops a serem tocados
     [Header("OSTs e Ambiences")]
@@ -116,6 +120,30 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     public void PlayButtonHoverSound()
     {
         RuntimeManager.PlayOneShot(ButtonHover);
+    }
+
+    private int GetDirection()
+    {
+        if (ScreenCenter == null)
+        {
+            return 1; 
+        }
+        if (transform.position.x < (ScreenCenter.transform.position.x - ScreenCenterDistance))
+        {
+            return 0; 
+        }
+        else if (transform.position.x > (ScreenCenter.transform.position.x + ScreenCenterDistance))
+        {
+            return 1; 
+        }
+        else
+        {
+            return 0; 
+        }
+    }
+    private void setparameter(int direction)
+    {
+        //HoverInstance.setParameterByName("Menu Direction", direction);
     }
     #endregion
 

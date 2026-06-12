@@ -333,6 +333,9 @@
 		<property name="length">
 			<value>220</value>
 		</property>
+		<property name="volume">
+			<value>3</value>
+		</property>
 		<property name="polyphony">
 			<value>1</value>
 		</property>

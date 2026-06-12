@@ -3590,8 +3590,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e86dc97798c8724db3b729cb9aa298f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::ClickerScene\xC1udioManager"
+  ScreenCenterDistance: 1
   clickerManager: {fileID: 0}
   Scene: 
+  ScreenCenter: {fileID: 0}
   GameplayOST:
     Guid:
       Data1: 1243761665

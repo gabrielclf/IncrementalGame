@@ -97,6 +97,7 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{539c5d78-ddc8-41a6-b733-2caddb394f9f}</destination>
+			<destination>{ad2aabb6-2e5c-40e7-ac92-769a688a78a9}</destination>
 		</relationship>
 		<relationship name="audioFile">
 			<destination>{d983fca7-1dfe-4a64-bcbb-668d2997df6e}</destination>
@@ -128,10 +129,19 @@
 			<value>pitch</value>
 		</property>
 	</object>
+	<object class="RandomizerModulator" id="{ad2aabb6-2e5c-40e7-ac92-769a688a78a9}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="amount">
+			<value>3</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{f365712e-0826-4f55-a18f-955ebbedadd6}">
 		<relationship name="effects">
 			<destination>{ec237e48-7eee-437e-8227-1e7e44efbfa0}</destination>
 			<destination>{26fe0030-e4a5-4bda-b531-e1b808bd6e89}</destination>
+			<destination>{3a855ae7-b662-4206-a50d-9c1338f47d43}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d1349387-cf39-415c-aa32-c4b8045bd0ff}" />
@@ -140,6 +150,33 @@
 	<object class="ChorusEffect" id="{26fe0030-e4a5-4bda-b531-e1b808bd6e89}">
 		<property name="depth">
 			<value>0</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{7d7090fe-6b76-4497-91d0-b70fece98235}</destination>
+		</relationship>
+	</object>
+	<object class="SFXReverbEffect" id="{3a855ae7-b662-4206-a50d-9c1338f47d43}">
+		<property name="wetLevel">
+			<value>-10</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{21afeecc-e25d-4068-8a1c-88ae494e7f48}</destination>
+		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{7d7090fe-6b76-4497-91d0-b70fece98235}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>mix</value>
+		</property>
+		<property name="amount">
+			<value>30.5</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{21afeecc-e25d-4068-8a1c-88ae494e7f48}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>wetLevel</value>
+		</property>
+		<property name="amount">
+			<value>13</value>
 		</property>
 	</object>
 </objects>

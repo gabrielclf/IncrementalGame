@@ -319,7 +319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277098582}
   m_Layer: 5
-  m_Name: Screen Center
+  m_Name: ScreenCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -830,41 +830,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02bfeacead19cfd428952ca4fffa87bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioSettings
-  SFXtestEventRef:
-    Guid:
-      Data1: -1281604179
-      Data2: 1077800841
-      Data3: -460185695
-      Data4: -822796897
-    Path: event:/SFXs/UI/Confirm
-  MusictestEventRef:
-    Guid:
-      Data1: 1283535292
-      Data2: 1123532857
-      Data3: -404957266
-      Data4: 626311105
-    Path: event:/OSTs/Tela Inicial
-  AmbiencetestEventRef:
-    Guid:
-      Data1: -39255120
-      Data2: 1333730774
-      Data3: -2012989012
-      Data4: -1266108830
-    Path: event:/Ambiences/Map
-  VOtestEventRef:
-    Guid:
-      Data1: 1101349779
-      Data2: 1166007949
-      Data3: 1668200622
-      Data4: 1310304056
-    Path: event:/SFXs/Scenery/Area Click Centro Oeste
-  MastertestEventRef:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
 --- !u!1 &1356966939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,6 +1574,8 @@ MonoBehaviour:
       Data3: -1967964747
       Data4: 1274207173
     Path: event:/SFXs/UI/Decline
+  ScreenCenter: {fileID: 0}
+  ScreenCenterDistance: 1
 --- !u!1 &1769139458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,6 +1760,8 @@ MonoBehaviour:
       Data3: -1984087902
       Data4: -586791178
     Path: event:/SFXs/UI/Options Click
+  ScreenCenter: {fileID: 0}
+  ScreenCenterDistance: 1
 --- !u!1 &2144735538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +1934,8 @@ MonoBehaviour:
       Data3: 712689305
       Data4: -1475389674
     Path: event:/SFXs/Title Screen/Title Click
+  ScreenCenter: {fileID: 0}
+  ScreenCenterDistance: 1
 --- !u!1001 &2213151144281117558
 PrefabInstance:
   m_ObjectHideFlags: 0

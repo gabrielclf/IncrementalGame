@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.8980392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1655,7 +1655,6 @@ GameObject:
   - component: {fileID: 514506057}
   - component: {fileID: 514506056}
   - component: {fileID: 514506061}
-  - component: {fileID: 514506060}
   m_Layer: 5
   m_Name: MenuPausa
   m_TagString: Untagged
@@ -1734,9 +1733,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514506055}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 158546054}
@@ -1745,26 +1744,13 @@ RectTransform:
   - {fileID: 573432123}
   - {fileID: 220904996}
   - {fileID: 1699486718}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1187012052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &514506060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514506055}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1bc26c4b959db4990af345b92dbe63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DontDestroy
-  indexOP: 6
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &514506061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3498,18 +3484,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872483932}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1004273721}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1187012052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -556.7241, y: 0}
-  m_SizeDelta: {x: 1113.4482, y: 0}
+  m_AnchoredPosition: {x: -2476.724, y: -540}
+  m_SizeDelta: {x: 1113.4482, y: -1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &872483934
 MonoBehaviour:
@@ -4343,6 +4329,8 @@ RectTransform:
   - {fileID: 1250516904}
   - {fileID: 1393915031}
   - {fileID: 1692846550}
+  - {fileID: 514506059}
+  - {fileID: 872483933}
   m_Father: {fileID: 2135400622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5727,7 +5715,7 @@ GameObject:
   - component: {fileID: 1906816896}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5941,6 +5929,7 @@ GameObject:
   - component: {fileID: 2006029952}
   - component: {fileID: 2006029951}
   - component: {fileID: 2006029950}
+  - component: {fileID: 2006029954}
   - component: {fileID: 2006029953}
   m_Layer: 5
   m_Name: BotaoVoltarJogo
@@ -6061,18 +6050,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1906816892}
-        m_TargetAssemblyTypeName: ClickerManager, Assembly-CSharp
-        m_MethodName: ApertarBotaoVoltarJogo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 1
 --- !u!114 &2006029951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6137,6 +6114,19 @@ MonoBehaviour:
       Data3: 1915184539
       Data4: 450884697
     Path: event:/SFXs/UI/Button Click
+--- !u!114 &2006029954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2006029948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6d0342bed7a10042a6e7c0766e3b665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIBotaoVoltar
+  MyButton: {fileID: 2006029950}
 --- !u!1 &2051429463
 GameObject:
   m_ObjectHideFlags: 0
@@ -6436,7 +6426,5 @@ SceneRoots:
   - {fileID: 2135400622}
   - {fileID: 1275911233}
   - {fileID: 899155693}
-  - {fileID: 514506059}
-  - {fileID: 872483933}
   - {fileID: 1074264265}
   - {fileID: 1162561144}

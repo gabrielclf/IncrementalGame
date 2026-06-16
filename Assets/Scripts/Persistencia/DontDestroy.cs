@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DontDestroy : MonoBehaviour
 {
@@ -16,6 +17,24 @@ public class DontDestroy : MonoBehaviour
             Destroy (gameObject);
         }
         
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        //16/06/2026 - Inserindo Condição de Vitória 
+        if (SceneManager.GetActiveScene().name == "Vitoria")
+        {
+             //16/06/2026 - Destruindo objetos persistentes para garantir restart sem erros
+            Destroy(gameObject);
+        }
     }
 
 }

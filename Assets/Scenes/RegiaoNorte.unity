@@ -5732,12 +5732,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abda2011267e5bb42a19adfb738e3c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickerManager
-  _game: {fileID: 2135400618}
   MainGameCanvas: {fileID: 1692846549}
   _upgradeCanvas: {fileID: 0}
   _textoContadorPontos: {fileID: 584854536}
   _textoContadorPontosPorSeg: {fileID: 466711967}
   _moeda: {fileID: 191727470}
+  PopUpPontos: {fileID: 0}
   _background: {fileID: 0}
   PontosPorSeg_Obj: {fileID: 0}
 --- !u!4 &1906816893

@@ -6,14 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class ClickerManager : MonoBehaviour
 {
-    public static ClickerManager instance; //classe é singleton por conveniência
-    //Manager dos objetos clicáveis
-    [SerializeField] private GameObject _game; //16/06/2026 - POG para condição de vitória
+    public static ClickerManager instance; //classe Ã© singleton por conveniÃªncia
+    //Manager dos objetos clicÃ¡veis
+
     public GameObject MainGameCanvas;
     [SerializeField] private GameObject _upgradeCanvas;
     [SerializeField] private TextMeshProUGUI _textoContadorPontos;
     [SerializeField] private TextMeshProUGUI _textoContadorPontosPorSeg;
     [SerializeField] private GameObject _moeda;
+    public GameObject PopUpPontos;
     [SerializeField] private GameObject _background;
 
     [Space]
@@ -46,7 +47,7 @@ public class ClickerManager : MonoBehaviour
         AtualizarUIPontos();
         AtualizarUIPontosPorSeg();
 
-
+       
         //_inicializarUpgrades = GetComponent<InicializarUpgrades>();[DEPRECATED]
         //_inicializarUpgrades.inicializarUpgrades(up, _uiUpgrade, _uiUpgradeTransform);[DEPRECATED]
 
@@ -62,24 +63,17 @@ public class ClickerManager : MonoBehaviour
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        //Inicializar componentes cena a cena:
+          //Inicializar componentes cena a cena:
         _upgradeCanvas = GameObject.Find("Menu_Upgrades");
         _background = GameObject.Find("BackGround");
         PontosPorSeg_Obj = GameObject.Find("PontosPorSegundo");
 
-        //16/06/2026 - Inserindo Condição de Vitória 
-        if (SceneManager.GetActiveScene().name == "Vitoria")
-        {
-             //16/06/2026 - Não exibir outros componentes de interface
-            _game.SetActive(false);
-        }
-        else
-        {
-            //Exibir janela do jogo ou janela de upgrades
-            _upgradeCanvas.SetActive(false);
-            MainGameCanvas.SetActive(true);
-        }
+        //Exibir janela do jogo ou janela de upgrades
+        _upgradeCanvas.SetActive(false);
+        MainGameCanvas.SetActive(true);
     }
+
+
     #region Atualizando UI
 
     private void AtualizarUIPontos()
@@ -132,7 +126,7 @@ public class ClickerManager : MonoBehaviour
     }
 
     public void ApertarBotaoVoltarJogo()
-    {
+    { //[DEPRECATED] - Operação feita dentro do unity editor
         _upgradeCanvas.SetActive(false);
         MainGameCanvas.SetActive(true);
     }
@@ -157,35 +151,24 @@ public class ClickerManager : MonoBehaviour
     /*  A partir dos scriptable objects definidos previamente, quando o jogador tiver os recursos disponíveis,
         eles serão disponiveis para compra e os outros irão aumentar progressivamente de preço */
 
-    public void ClicarBotaoUpgrade(UpgradePontos upgrade, UpgradeButtons referenciaBotao, string titulo_upgrade)
+    public void ClicarBotaoUpgrade(UpgradePontos upgrade, UpgradeButtons referenciaBotao)
     {
-        //Condição de vitoria (chama)
-        if (titulo_upgrade == "SalvarBrasil")
+        //Se temos os pontos necessários
+        if (QuantidadeAtualPontos >= upgrade.CustoAtualUpgrade)
         {
-            _upgradeCanvas.SetActive(false);
-            MainGameCanvas.SetActive(false);
-            SceneManager.LoadScene("Vitoria");
+            //compra o upgrade clicado
+            upgrade.AplicarUpgrade();
+
+            //desconta do valor atual
+            QuantidadeAtualPontos -= upgrade.CustoAtualUpgrade;
+
+            //atualizar UI
+            AtualizarUIPontos();
+
+            //aumentar preço de proximos upgrade e seus numeros na interface
+            upgrade.CustoAtualUpgrade = Mathf.Round((float)((upgrade.CustoAtualUpgrade) * (1 + upgrade.MultiplicadorAumentoCustoPorUpgrade)));
+            referenciaBotao.TextoCustoUpgrade.text = "Custo: " + upgrade.CustoAtualUpgrade;
         }
-        else
-        {
-            //Se temos os pontos necessários
-            if (QuantidadeAtualPontos >= upgrade.CustoAtualUpgrade)
-            {
-                //compra o upgrade clicado
-                upgrade.AplicarUpgrade();
-
-                //desconta do valor atual
-                QuantidadeAtualPontos -= upgrade.CustoAtualUpgrade;
-
-                //atualizar UI
-                AtualizarUIPontos();
-
-                //aumentar preço de proximos upgrade e seus numeros na interface
-                upgrade.CustoAtualUpgrade = Mathf.Round((float)((upgrade.CustoAtualUpgrade) * (1 + upgrade.MultiplicadorAumentoCustoPorUpgrade)));
-                referenciaBotao.TextoCustoUpgrade.text = "Custo: " + upgrade.CustoAtualUpgrade;
-            }
-        }
-
     }
     #endregion
 }

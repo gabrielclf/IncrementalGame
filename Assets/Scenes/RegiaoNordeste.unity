@@ -1113,7 +1113,6 @@ MonoBehaviour:
   _moeda: {fileID: 0}
   _upgrades:
   - {fileID: 11400000, guid: 4f937f0890d08124fa84aa3851d3093a, type: 2}
-  - {fileID: 11400000, guid: 329e4adbbea3b094ba89dfab349ddcfd, type: 2}
   _uiUpgrade: {fileID: 3694944526701586740, guid: 5b20d7ae755b4444b90374d75e4bddb0, type: 3}
   _uiUpgradeTransform: {fileID: 1731301323}
 --- !u!114 &573921385

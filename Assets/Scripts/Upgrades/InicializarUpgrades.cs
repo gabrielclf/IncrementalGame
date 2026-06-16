@@ -25,7 +25,7 @@ public class InicializarUpgrades : MonoBehaviour
             butt.Ilustracao.sprite = upgrades[id_Atual]._imagem;
 
             //setar eventos onClick em botões dinamicamente criados
-            butt.BotaoUpgrade.onClick.AddListener(delegate {ClickerManager.instance.ClicarBotaoUpgrade(upgrades[id_Atual], butt,upgrades[id_Atual].TextoTituloUpgrade); });
+            butt.BotaoUpgrade.onClick.AddListener(delegate {ClickerManager.instance.ClicarBotaoUpgrade(upgrades[id_Atual], butt); });
 
             //setar upgradeData no audio manager
             UpgradesAudioManager audioManager = go.GetComponentInChildren<UpgradesAudioManager>();

@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RegiaoSudesteSul.unity
     guid: 08c5103924362ce48a8779fe9f1316c5
+  - enabled: 1
+    path: Assets/Scenes/Vitoria.unity
+    guid: a9afeaaef9362324f862c8799f3094a0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

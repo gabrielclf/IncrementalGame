@@ -127,14 +127,14 @@ public class ClickerManager : MonoBehaviour
     //Controlando botões
     public void ApertarBotaoUpgrade()
     {
-        //25/06 - Modificando via feedback: mostrar custo atual enquanto loja está ativa, desabilitar a moeda por unity
+        MainGameCanvas.SetActive(false);
         _upgradeCanvas.SetActive(true);
     }
 
     public void ApertarBotaoVoltarJogo()
     {
         _upgradeCanvas.SetActive(false);
-        
+        MainGameCanvas.SetActive(true);
     }
 
     #endregion

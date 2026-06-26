@@ -31,10 +31,12 @@ public class UpgradesAudioManager : MonoBehaviour, IPointerEnterHandler
     {
         if (clickerManager == null)
         {
+            Debug.LogWarning("UpgradesAudioManager: clickerManager is null. Is ClickerManager present in the scene?", this);
             return;
         }
         if (upgradeData == null)
         {
+            Debug.LogWarning("UpgradesAudioManager: upgradeData is not assigned in the Inspector.", this);
             return;
         }
 

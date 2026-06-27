@@ -181,7 +181,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>10</value>
+			<value>3</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{a343f8e0-ebb9-4067-88db-db54c9883c66}">
@@ -189,7 +189,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>6</value>
+			<value>-1</value>
 		</property>
 	</object>
 	<object class="RandomizerModulator" id="{6a72a39f-05d1-4a4d-a36a-c16b62b9318c}">

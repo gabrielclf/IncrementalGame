@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
+  m_Name: Upgrade4-4
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: "Salve a Mata Atl\xE2ntica"
+  _imagem: {fileID: -8809403429472642422, guid: 9e84e4d6b3d31e647952a473fbf2e0d8, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 2684354560
+  CustoAtualUpgrade: 2684354560
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "Fundo Mata Atl\xE2ntica"
+  TextoDescricaoUpgrade: "Introdu\xE7\xE3o de pol\xEDticas de maior rigidez e fiscaliza\xE7\xE3o
+    seriam uma solu\xE7\xE3o vi\xE1vel para reduzir os impactos do meio ambiente
+    na Mata Atl\xE2ntica. Fazendo com que dessa maneira, a interven\xE7\xE3o antropol\xF3gica
+    neste ecossistema pode ser controlada e feita de maneira a preservar a natureza."

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
+  m_Name: Upgrade4-3
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: "Falta de Educa\xE7\xE3o Ambiental"
+  _imagem: {fileID: 1379202430493461581, guid: 6981dc793cd518b40b3cfb6642dc51c0, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 671088640
+  CustoAtualUpgrade: 671088640
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "Implementa\xE7\xE3o de Pol\xEDticas de Educa\xE7\xE3o Ambiental"
+  TextoDescricaoUpgrade: "\xC9 fulcral a implementa\xE7\xE3o de pol\xEDticas de educa\xE7\xE3o
+    ambiental para que se entenda a dimens\xE3o do problema que s\xE3o as mudan\xE7as
+    clim\xE1ticas e que sejam tomadas decis\xF5es visando o panorama real em que
+    o mundo se encontra. "

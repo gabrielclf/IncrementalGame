@@ -15,6 +15,7 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     [SerializeField] ClickerManager clickerManager;
     [SerializeField] string Scene;
     [SerializeField] private GameObject ScreenCenter;
+    private bool Clicked = false;
     
     // Referências de Loops a serem tocados
     [Header("OSTs e Ambiences")]
@@ -163,25 +164,60 @@ public class ClickerSceneÁudioManager : MonoBehaviour
         switch (getScene())
         {
             case 0:
+                if (Clicked == true)
+                {
+                    return;
+                }
                 RuntimeManager.PlayOneShot(NorteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
             break;
 
             case 1:
+                if (Clicked == true)
+                {
+                    return;
+                }
                 RuntimeManager.PlayOneShot(NordesteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
             break;
 
             case 2:
+                if (Clicked == true)
+                {
+                    return;
+                }
                 RuntimeManager.PlayOneShot(OesteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
             break;
 
             case 3:
+                if (Clicked == true)
+                {
+                    return;
+                }
                 RuntimeManager.PlayOneShot(SulSudesteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
             break;
 
             default:
+                if (Clicked == true)
+                {
+                    return;
+                }
                 RuntimeManager.PlayOneShot(NorteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
             break;
         }
+    }
+    IEnumerator clickSoundDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Clicked = false;
     }
 
     

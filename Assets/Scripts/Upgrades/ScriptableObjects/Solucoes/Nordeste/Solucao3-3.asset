@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
+  m_Name: Solucao3-3
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: "Refugiados clim\xE1ticos"
+  _imagem: {fileID: 8617915538859294829, guid: 4c44753f96bad6e418eab4d36c011ad1, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 5242880
+  CustoAtualUpgrade: 5242880
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "Pol\xEDticas de Acolhimento "
+  TextoDescricaoUpgrade: "Para lidar com essa quest\xE3o uma a\xE7\xE3o valida \xE9
+    a cria\xE7\xE3o de pol\xEDticas de acolhimento para essas pessoas que migram
+    do Nordeste v\xEDtimas das mudan\xE7as clim\xE1ticas para evitar que essas pessoas
+    acabem a margem da sociedade. "

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
+  m_Name: Solucao2-3
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: "Altos pre\xE7os na conta de luz"
+  _imagem: {fileID: -4418610590106900465, guid: d7f585661190270408d44d10da502004, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 40960
+  CustoAtualUpgrade: 40960
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: Investimento em outras fontes de energia
+  TextoDescricaoUpgrade: "A solu\xE7\xE3o para essa quest\xE3o \xE9 investir em outras
+    maneiras de gera\xE7\xE3o de energia renov\xE1veis que n\xE3o dependam de clima,
+    assim a demanda n\xE3o fica a merc\xEA do clima e ainda evita a gera\xE7\xE3o
+    de gases estufa. "

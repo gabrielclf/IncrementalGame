@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec55082d66a4334182fea3194cbb756, type: 3}
+  m_Name: Solucao3-1
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
+  TextoTituloUpgrade: "Eros\xE3o Costeira"
+  _imagem: {fileID: 1226910026772746336, guid: cac15984d31114e448fe6480c5958abc, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 327680
+  CustoAtualUpgrade: 327680
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "Constru\xE7\xE3o de Espig\xF5es"
+  TextoDescricaoUpgrade: "Os espig\xF5es s\xE3o estrutura criadas com o objetivo
+    espec\xEDfico de conter as eros\xF5es costeiras, sendo feitos de pedras ou concreto
+    e sendo constru\xEDdos perpendicularmente a costa, essas estruturas atuam barrando
+    o transporte de sedimentos e acumulando areia. "

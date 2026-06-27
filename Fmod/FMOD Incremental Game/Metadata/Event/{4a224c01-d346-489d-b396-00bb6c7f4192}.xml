@@ -149,9 +149,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{7a19a8b0-0f81-4f41-aedb-7a647e435a42}">
-		<property name="volume">
-			<value>-8</value>
-		</property>
 		<property name="name">
 			<value>Musica Principal</value>
 		</property>
@@ -183,9 +180,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{486d863e-de1d-4d10-af43-82cfd02c43d3}">
-		<property name="volume">
-			<value>-6.5</value>
-		</property>
 		<property name="name">
 			<value>Camada Norte</value>
 		</property>
@@ -217,9 +211,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{af7a766f-e3f1-48fc-a917-f136c22881a9}">
-		<property name="volume">
-			<value>-10</value>
-		</property>
 		<property name="name">
 			<value>Camada Nordeste</value>
 		</property>
@@ -251,9 +242,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{68138191-5c5e-4785-a1df-003028041814}">
-		<property name="volume">
-			<value>-9</value>
-		</property>
 		<property name="name">
 			<value>Camada Centro Oeste</value>
 		</property>
@@ -285,9 +273,6 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{3e6fe7ef-b7ca-453b-83b4-2114a261ca29}">
-		<property name="volume">
-			<value>-10</value>
-		</property>
 		<property name="name">
 			<value>Camada SudesteSul</value>
 		</property>

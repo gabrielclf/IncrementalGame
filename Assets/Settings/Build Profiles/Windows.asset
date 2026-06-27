@@ -18,29 +18,8 @@ MonoBehaviour:
   m_PlatformId: 4e3c793746204150860bf175a9a41a05
   m_PlatformBuildProfile:
     rid: 6961010737876566098
-  m_OverrideGlobalSceneList: 1
-  m_Scenes:
-  - m_enabled: 1
-    m_path: Assets/Scenes/MainMenu.unity
-    m_guid: e6e9a812414e7234897829024065c631
-  - m_enabled: 1
-    m_path: Assets/Scenes/RegiaoNorte.unity
-    m_guid: 8c9cfa26abfee488c85f1582747f6a02
-  - m_enabled: 1
-    m_path: Assets/Scenes/RegiaoNordeste.unity
-    m_guid: 1976bf27ffc029c41aca962cdc0bea23
-  - m_enabled: 1
-    m_path: Assets/Scenes/RegiaoCentroOeste.unity
-    m_guid: 11efed5e0351ea046bb35b6aa1daeaef
-  - m_enabled: 1
-    m_path: Assets/Scenes/RegiaoSudesteSul.unity
-    m_guid: 08c5103924362ce48a8779fe9f1316c5
-  - m_enabled: 1
-    m_path: Assets/Scenes/Vitoria.unity
-    m_guid: a9afeaaef9362324f862c8799f3094a0
-  - m_enabled: 1
-    m_path: Assets/Scenes/GameOverview.unity
-    m_guid: 6522c2a9c330f8a4b97ee12c07fcaef4
+  m_OverrideGlobalSceneList: 0
+  m_Scenes: []
   m_HasScriptingDefines: 0
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:

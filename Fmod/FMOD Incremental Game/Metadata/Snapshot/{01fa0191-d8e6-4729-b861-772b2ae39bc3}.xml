@@ -39,7 +39,7 @@
 			<value>cutoff</value>
 		</property>
 		<property name="value">
-			<value>1000</value>
+			<value>2000</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{fad97b02-a453-4273-b5d3-d3df5856ecf0}</destination>
@@ -50,7 +50,7 @@
 			<value>volume</value>
 		</property>
 		<property name="value">
-			<value>-6.5</value>
+			<value>0</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{7227d481-b0e1-4c8e-93f0-f5b55e729507}</destination>
@@ -72,7 +72,7 @@
 			<value>volume</value>
 		</property>
 		<property name="value">
-			<value>5</value>
+			<value>2.5</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{23646d5b-aaf9-4ed1-b7b6-b40334f7983a}</destination>

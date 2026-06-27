@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
+  m_Name: Solucao1-1
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: "Escassez de recursos h\xEDdricos  "
+  _imagem: {fileID: -1510565518171661573, guid: 2cec29bf3b20ea7498e8ada0ca227d9e, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 20
+  CustoAtualUpgrade: 20
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "Constru\xE7\xE3o de Cisternas"
+  TextoDescricaoUpgrade: "Uma a\xE7\xE3o que pode ser feita para atenuar as consequ\xEAncias
+    do problema \xE9 a constru\xE7\xE3o de cisternas para captar a \xE1gua da chuva
+    e assim reutiliz\xE1-la para diversos fins, como irriga\xE7\xE3o, consumo humano
+    e cozinhar. "

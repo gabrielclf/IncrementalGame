@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec55082d66a4334182fea3194cbb756, type: 3}
+  m_Name: Upgrade4-2
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
+  TextoTituloUpgrade: "Emiss\xE3o de Gases na produ\xE7\xE3o agropecu\xE1ria"
+  _imagem: {fileID: 7289393236204641901, guid: 9065a1c4c5365834a92a7b3e3fe1262a, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 167772160
+  CustoAtualUpgrade: 167772160
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "Ado\xE7\xE3o de sistemas integrados "
+  TextoDescricaoUpgrade: "O implemento de sistemas integrados, como a ILPF (Integra\xE7\xE3o
+    Lavoura-Pecu\xE1ria-Floresta) pode reduzir significativamente a produ\xE7\xE3o,
+    neutralizando a emiss\xE3o de metano pelos bovinos, alem de reduzir a produ\xE7\xE3o
+    de gases como um todo."

@@ -4649,9 +4649,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   _moeda: {fileID: 191727470}
   _upgrades:
-  - {fileID: 11400000, guid: 4861ce5ec21bf2f4f9b6afbcee9f85f4, type: 2}
-  - {fileID: 11400000, guid: f0769585d70712c409d12d6323de0607, type: 2}
-  - {fileID: 11400000, guid: 84810b73d44a12245aae1a5ac2942bf3, type: 2}
+  - {fileID: 11400000, guid: e887618d1a97b0a45940b33c76cdafa7, type: 2}
+  - {fileID: 11400000, guid: bcde3b3adebdafc44afecc09becf8039, type: 2}
+  - {fileID: 11400000, guid: cc58dd191a1c2ce44943f1b897809d29, type: 2}
+  - {fileID: 11400000, guid: 6c5c1b2bdf1f32f43be97e4d1f3832e5, type: 2}
   _uiUpgrade: {fileID: 3694944526701586740, guid: 5b20d7ae755b4444b90374d75e4bddb0, type: 3}
   _uiUpgradeTransform: {fileID: 1731301323}
 --- !u!114 &1275911235

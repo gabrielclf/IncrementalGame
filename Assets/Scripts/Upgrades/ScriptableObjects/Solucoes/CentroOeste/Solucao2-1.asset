@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec55082d66a4334182fea3194cbb756, type: 3}
+  m_Name: Solucao2-1
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
+  TextoTituloUpgrade: "Perca de produ\xE7\xE3o Agr\xEDcola"
+  _imagem: {fileID: -7594997651171027503, guid: 4124401e1fc44954c9e9720090b64c6d, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 2560
+  CustoAtualUpgrade: 2560
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "M\xE9todos alternativos de cultivo"
+  TextoDescricaoUpgrade: "Para lidar com a escassez de \xE1gua gerado pelas mudan\xE7as
+    clim\xE1ticas, uma alternativa efetiva s\xE3o m\xE9todos alternativos de cultivo,
+    a exemplo da hidroponia, que economiza uma quantidade consider\xE1vel de \xE1gua
+    e agricultura de precis\xE3o, que usa de tecnologia para coletar informa\xE7\xF5es
+    e otimizar a produ\xE7\xE3o. "

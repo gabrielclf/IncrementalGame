@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
+  m_Name: Solucao1-3
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: "Queimadas na Amaz\xF4nia"
+  _imagem: {fileID: -4263397644506745293, guid: 779aca87b117c134483bfabfa664dddf, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 100
+  CustoAtualUpgrade: 100
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "Brigadas de Inc\xEAndio "
+  TextoDescricaoUpgrade: "A Brigada de Inc\xEAndio \xE9 um grupo de pessoas capacitadas
+    a lidarem com inc\xEAndios e suportadas pelo corpo de bombeiros, havendo v\xE1rias
+    delas ao redor do Brasil, cada uma com sua \xE1rea de responsabilidade. Sendo
+    assim, esses grupos de pessoas s\xE3o uma ferramenta essencial para prevenir
+    e mitigar os danos causados pelas queimadas na Amazonia. "

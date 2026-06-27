@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec55082d66a4334182fea3194cbb756, type: 3}
+  m_Name: Solucao2-4
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
+  TextoTituloUpgrade: Salve o Cerrado
+  _imagem: {fileID: -6927844679209657367, guid: da61a4e87fe5dad4f9896d5341c62133, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 163840
+  CustoAtualUpgrade: 163840
+  MultiplicadorAumentoCustoPorUpgrade: 0.05000000074505806
+  TextoBotaoUpgrade: "Cria\xE7\xE3o de Unidades de Preserva\xE7\xE3o"
+  TextoDescricaoUpgrade: "Para evitar a extin\xE7\xE3o de diversas esp\xE9cies presentes
+    no Cerrado, assim como outras adversidades que afligem o bioma, uma solu\xE7\xE3o
+    \xE9 a cria\xE7\xE3o de Unidades de Preserva\xE7\xE3o para que haja uma mitiga\xE7\xE3o
+    dos efeitos gerados pelas mudan\xE7as clim\xE1ticas e assim conservar o ecossistema
+    e por consequ\xEAncias a biodiversidade."

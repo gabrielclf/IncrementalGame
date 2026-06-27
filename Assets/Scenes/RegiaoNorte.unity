@@ -525,6 +525,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 220905000}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 514506055}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -549,18 +561,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 220905000}
-        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
-        m_MethodName: PlayButtonClickSound
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &220904998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -620,11 +620,11 @@ MonoBehaviour:
     Path: event:/SFXs/UI/Button Hover
   Button_Click:
     Guid:
-      Data1: -271184925
-      Data2: 1137006064
-      Data3: 1915184539
-      Data4: 450884697
-    Path: event:/SFXs/UI/Button Click
+      Data1: 1202847075
+      Data2: 1259096185
+      Data3: -1967964747
+      Data4: 1274207173
+    Path: event:/SFXs/UI/Decline
 --- !u!1 &251321094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,6 +1655,8 @@ GameObject:
   - component: {fileID: 514506057}
   - component: {fileID: 514506056}
   - component: {fileID: 514506061}
+  - component: {fileID: 514506063}
+  - component: {fileID: 514506062}
   m_Layer: 5
   m_Name: MenuPausa
   m_TagString: Untagged
@@ -1763,6 +1765,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f7904ccb33b70e458e783ac02465ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIButtonController
+--- !u!114 &514506062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514506055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioGlobalParameterTrigger
+  CollisionTag: 
+  Parameter: Game State
+  TriggerEvent: 12
+  Value: 0
+--- !u!114 &514506063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514506055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b0e04e2572f9a940a47465f6f3c2f00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioGlobalParameterTrigger
+  CollisionTag: 
+  Parameter: Game State
+  TriggerEvent: 11
+  Value: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3579,8 +3613,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e86dc97798c8724db3b729cb9aa298f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::ClickerScene\xC1udioManager"
+  ScreenCenterDistance: 1
   clickerManager: {fileID: 0}
   Scene: 
+  ScreenCenter: {fileID: 0}
   GameplayOST:
     Guid:
       Data1: 1243761665
@@ -3595,6 +3631,13 @@ MonoBehaviour:
       Data3: -2012989012
       Data4: -1266108830
     Path: event:/Ambiences/Map
+  GameplaySnapshot:
+    Guid:
+      Data1: 1615461623
+      Data2: 1283078398
+      Data3: -208297855
+      Data4: 592975603
+    Path: event:/Snapshots/Game State
   ButtonClickSound:
     Guid:
       Data1: -271184925
@@ -6291,7 +6334,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   NonRigidbodyVelocity: 0
-  Params: []
+  Params:
+  - Name: Menu Direction
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
@@ -6322,7 +6367,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   NonRigidbodyVelocity: 0
-  Params: []
+  Params:
+  - Name: Menu Direction
+    Value: 0
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20

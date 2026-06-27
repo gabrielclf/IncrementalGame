@@ -425,6 +425,7 @@ GameObject:
   - component: {fileID: 285731726}
   - component: {fileID: 285731725}
   - component: {fileID: 285731724}
+  - component: {fileID: 285731727}
   m_Layer: 5
   m_Name: BotaoRegiaoSudesteSul
   m_TagString: Untagged
@@ -508,6 +509,18 @@ MonoBehaviour:
           m_StringArgument: RegiaoSudesteSul
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 285731727}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &285731725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,6 +559,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285731722}
   m_CullTransparentMesh: 1
+--- !u!114 &285731727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285731722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: 551114135
+      Data2: 1253451180
+      Data3: -89515114
+      Data4: 1751842689
+    Path: event:/SFXs/UI/Area Change Hover
+  Button_Click:
+    Guid:
+      Data1: 21490912
+      Data2: 1074396012
+      Data3: 1365403065
+      Data4: -1377977386
+    Path: event:/SFXs/UI/Area Change
 --- !u!1 &435996814
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,6 +1036,7 @@ GameObject:
   - component: {fileID: 537864940}
   - component: {fileID: 537864939}
   - component: {fileID: 537864938}
+  - component: {fileID: 537864941}
   m_Layer: 5
   m_Name: BotaoRegiaoNordeste
   m_TagString: Untagged
@@ -1080,6 +1120,18 @@ MonoBehaviour:
           m_StringArgument: RegiaoNordeste
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 537864941}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &537864939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1118,6 +1170,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 537864936}
   m_CullTransparentMesh: 1
+--- !u!114 &537864941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537864936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: 551114135
+      Data2: 1253451180
+      Data3: -89515114
+      Data4: 1751842689
+    Path: event:/SFXs/UI/Area Change Hover
+  Button_Click:
+    Guid:
+      Data1: 21490912
+      Data2: 1074396012
+      Data3: 1365403065
+      Data4: -1377977386
+    Path: event:/SFXs/UI/Area Change
 --- !u!1 &582098857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,6 +2053,7 @@ GameObject:
   - component: {fileID: 1382974714}
   - component: {fileID: 1382974713}
   - component: {fileID: 1382974712}
+  - component: {fileID: 1382974715}
   m_Layer: 5
   m_Name: BotaoRegiaoNorte
   m_TagString: Untagged
@@ -2058,6 +2137,18 @@ MonoBehaviour:
           m_StringArgument: RegiaoNorte
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1382974715}
+        m_TargetAssemblyTypeName: MenuButtons, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1382974713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,6 +2187,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382974710}
   m_CullTransparentMesh: 1
+--- !u!114 &1382974715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382974710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: 551114135
+      Data2: 1253451180
+      Data3: -89515114
+      Data4: 1751842689
+    Path: event:/SFXs/UI/Area Change Hover
+  Button_Click:
+    Guid:
+      Data1: 21490912
+      Data2: 1074396012
+      Data3: 1365403065
+      Data4: -1377977386
+    Path: event:/SFXs/UI/Area Change
 --- !u!1 &1611894794
 GameObject:
   m_ObjectHideFlags: 0

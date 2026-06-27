@@ -61,7 +61,7 @@
 	</object>
 	<object class="EventAutomatableProperties" id="{4e74474e-3c06-4719-b93c-3dbf9b27fef9}">
 		<property name="triggerCooldown">
-			<value>10</value>
+			<value>50</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{90755658-08df-4e8b-8ebf-a5a170da1608}" />

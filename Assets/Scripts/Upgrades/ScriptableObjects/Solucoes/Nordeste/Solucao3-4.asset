@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
+  m_Name: Solucao3-4
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: Salve a Caatinga
+  _imagem: {fileID: -258915121724769785, guid: 75409717b54cab84c83d2b5d8af2b905, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 20971520
+  CustoAtualUpgrade: 20971520
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: Fundo Caatinga
+  TextoDescricaoUpgrade: "Inspirado no Fundo Amaz\xF4nia, o Fundo Caatinga \xE9 uma
+    iniciativa que busca captar recursos p\xFAblicos e privado com o intuito de conservar
+    o bioma da Caantiga, combatendo a desertifica\xE7\xE3o, preservando a biodiversidade
+    e incentivando o uso sustent\xE1vel dos recursos naturais."

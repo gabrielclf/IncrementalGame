@@ -11,7 +11,7 @@ public abstract class UpgradePontos : ScriptableObject
 
     public double CustoOriginalUpgrade = 100;
     public double CustoAtualUpgrade = 100;
-    public double MultiplicadorAumentoCustoPorUpgrade = 0.05f;
+    public double MultiplicadorAumentoCustoPorUpgrade = 1.5f;
 
     public string TextoBotaoUpgrade = "Melhorar";
     [TextArea(3,10)]

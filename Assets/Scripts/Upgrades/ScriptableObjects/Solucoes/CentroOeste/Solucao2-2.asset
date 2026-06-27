@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81cadb2992ff694c8e219166f14bfa1, type: 3}
+  m_Name: Solucao2-2
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
+  TextoTituloUpgrade: "Aumento da incid\xEAncia de doen\xE7as respirat\xF3rias"
+  _imagem: {fileID: 1934455495103174231, guid: 93da65785bfebbb4f8898a6c4bb78603, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 10240
+  CustoAtualUpgrade: 10240
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: "Investimento em monitoramento tecnol\xF3gico"
+  TextoDescricaoUpgrade: "Uma das formas \xE9 lidar com isso \xE9 o monitoramento
+    tecnol\xF3gico com a ideia de prever quando esse evento acontecer\xE1 para informar
+    a popula\xE7\xE3o para que essa possa tomar as devidas medidas preventivas e
+    evitar contrair tais doen\xE7as respirat\xF3rias. "

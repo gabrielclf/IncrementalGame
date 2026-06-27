@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ec55082d66a4334182fea3194cbb756, type: 3}
+  m_Name: Solucao3-2
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
+  TextoTituloUpgrade: "Intrus\xE3o Salina"
+  _imagem: {fileID: -3806708129831630702, guid: 668bd1347de6ca84cae3f59cb4c39dda, type: 3}
+  QuantidadeUpgrades: 1
+  CustoOriginalUpgrade: 1310720
+  CustoAtualUpgrade: 1310720
+  MultiplicadorAumentoCustoPorUpgrade: 1.5
+  TextoBotaoUpgrade: Alargamento das faixas de areia
+  TextoDescricaoUpgrade: "O alargamento das faixas de areia consiste na t\xE9cnica
+    de engenharia que consiste no aumento artificial das faixas de areia pela adi\xE7\xE3o
+    de sedimentos, normalmente retirados do fundo do oceano. Se feito de maneira
+    correta, se mostra uma alternativa vi\xE1vel para mitigar o problema. "

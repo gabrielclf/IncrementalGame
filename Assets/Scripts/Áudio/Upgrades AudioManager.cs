@@ -2,6 +2,7 @@ using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
 using UnityEngine.EventSystems;
+using System.Collections;
 
 public class UpgradesAudioManager : MonoBehaviour, IPointerEnterHandler
 {
@@ -10,6 +11,7 @@ public class UpgradesAudioManager : MonoBehaviour, IPointerEnterHandler
     [SerializeField] EventReference BuyUpgradeSound;
     [SerializeField] EventReference CantUpgradeSound;
     [SerializeField] EventReference ButtonHoverSound;
+    private bool Clicked = false;
     private int upgradeLevel = 0;
 
     //Code References
@@ -28,7 +30,10 @@ public class UpgradesAudioManager : MonoBehaviour, IPointerEnterHandler
     }
 
     public void PlayUpgradeSound()
-    {
+    { if (Clicked == true)
+        {
+            return;
+        }
         if (clickerManager == null)
         {
             return;
@@ -41,6 +46,8 @@ public class UpgradesAudioManager : MonoBehaviour, IPointerEnterHandler
         if (clickerManager.QuantidadeAtualPontos < upgradeData.CustoAtualUpgrade)
         {
             RuntimeManager.PlayOneShot(CantUpgradeSound);
+            Clicked = true;
+            StartCoroutine(clickSoundDelay());
             return;
         }
 
@@ -53,6 +60,14 @@ public class UpgradesAudioManager : MonoBehaviour, IPointerEnterHandler
             RuntimeManager.PlayOneShot(UpgradeSound);
         }
         upgradeLevel++;
+        Clicked = true;
+        StartCoroutine(clickSoundDelay());
+    }
+
+    IEnumerator clickSoundDelay()
+    {
+        yield return new WaitForSeconds(0.25f);
+        Clicked = false;
     }
 
     // Update is called once per frame

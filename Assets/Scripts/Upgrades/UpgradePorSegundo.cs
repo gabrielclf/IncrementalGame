@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName ="UpgradePontos/Pontos por Segundo", fileName ="Pontos por Segundo")]
+[CreateAssetMenu(menuName = "UpgradePontos/Pontos por Segundo", fileName = "Pontos por Segundo")]
 public class UpgradePorSegundo : UpgradePontos
 {
     public override void AplicarUpgrade()
@@ -8,6 +8,15 @@ public class UpgradePorSegundo : UpgradePontos
         GameObject gameObject = Instantiate(ClickerManager.instance.PontosPorSeg_Obj, Vector3.zero, Quaternion.identity);
         gameObject.GetComponent<PontosPorSegundoTimer>().PontosPorSegundo = QuantidadeUpgrades;
         DontDestroyOnLoad(gameObject);
-        ClickerManager.instance.AumentoDePontosPorSegSimples(QuantidadeUpgrades);
+        if (QuantidadeUpgrades <= 1)
+        {
+            ClickerManager.instance.AumentoDePontosPorSegSimples(QuantidadeUpgrades);
+        }
+        else
+        {
+            gameObject.GetComponent<PontosPorSegundoTimer>().PontosPorSegundo = QuantidadeUpgrades*1.5;
+            ClickerManager.instance.AumentoDePontosPorSegSimples(QuantidadeUpgrades * 1.5);
+
+        }
     }
 }

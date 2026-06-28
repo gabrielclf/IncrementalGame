@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
   TextoTituloUpgrade: "Intrus\xE3o Salina"
   _imagem: {fileID: -3806708129831630702, guid: 668bd1347de6ca84cae3f59cb4c39dda, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 371293
   CustoOriginalUpgrade: 1310720
   CustoAtualUpgrade: 1310720
   MultiplicadorAumentoCustoPorUpgrade: 1.5

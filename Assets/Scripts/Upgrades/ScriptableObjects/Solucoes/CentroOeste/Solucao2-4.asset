@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
   TextoTituloUpgrade: Salve o Cerrado
   _imagem: {fileID: -6927844679209657367, guid: da61a4e87fe5dad4f9896d5341c62133, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 2197
   CustoOriginalUpgrade: 163840
   CustoAtualUpgrade: 163840
   MultiplicadorAumentoCustoPorUpgrade: 0.05000000074505806

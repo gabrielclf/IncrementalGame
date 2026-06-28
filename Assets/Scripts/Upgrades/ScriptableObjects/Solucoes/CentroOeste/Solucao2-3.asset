@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: "Altos pre\xE7os na conta de luz"
   _imagem: {fileID: -4418610590106900465, guid: d7f585661190270408d44d10da502004, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 343
   CustoOriginalUpgrade: 40960
   CustoAtualUpgrade: 40960
   MultiplicadorAumentoCustoPorUpgrade: 1.5

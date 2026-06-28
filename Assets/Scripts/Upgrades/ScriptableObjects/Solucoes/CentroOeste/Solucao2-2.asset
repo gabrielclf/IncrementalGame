@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: "Aumento da incid\xEAncia de doen\xE7as respirat\xF3rias"
   _imagem: {fileID: 1934455495103174231, guid: 93da65785bfebbb4f8898a6c4bb78603, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 49
   CustoOriginalUpgrade: 10240
   CustoAtualUpgrade: 10240
   MultiplicadorAumentoCustoPorUpgrade: 1.5

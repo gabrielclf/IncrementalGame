@@ -8,15 +8,7 @@ public class UpgradePorSegundo : UpgradePontos
         GameObject gameObject = Instantiate(ClickerManager.instance.PontosPorSeg_Obj, Vector3.zero, Quaternion.identity);
         gameObject.GetComponent<PontosPorSegundoTimer>().PontosPorSegundo = QuantidadeUpgrades;
         DontDestroyOnLoad(gameObject);
-        if (QuantidadeUpgrades <= 1)
-        {
-            ClickerManager.instance.AumentoDePontosPorSegSimples(QuantidadeUpgrades);
-        }
-        else
-        {
-            gameObject.GetComponent<PontosPorSegundoTimer>().PontosPorSegundo = QuantidadeUpgrades*1.5;
-            ClickerManager.instance.AumentoDePontosPorSegSimples(QuantidadeUpgrades * 1.5);
+        ClickerManager.instance.AumentoDePontosPorSegSimples(QuantidadeUpgrades);
 
-        }
     }
 }

@@ -117,7 +117,7 @@ public class ClickerManager : MonoBehaviour
 
     public void GanharMoeda()
     {
-        QuantidadeAtualPontos += 1 + PontosPorSeg_Upgrades*(1.5);
+        QuantidadeAtualPontos += 1 + PontosPorSeg_Upgrades;
         AtualizarUIPontos();
 
     }

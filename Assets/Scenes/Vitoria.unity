@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 459523709}
   - component: {fileID: 459523708}
   - component: {fileID: 459523707}
+  - component: {fileID: 459523710}
   m_Layer: 5
   m_Name: ReturnoMainMenu
   m_TagString: Untagged
@@ -358,6 +359,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 459523705}
   m_CullTransparentMesh: 1
+--- !u!114 &459523710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459523705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  Button_Click:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1400,7 @@ GameObject:
   - component: {fileID: 1083275830}
   - component: {fileID: 1083275829}
   - component: {fileID: 1083275828}
+  - component: {fileID: 1083275831}
   m_Layer: 5
   m_Name: Fechar
   m_TagString: Untagged
@@ -1494,6 +1522,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083275826}
   m_CullTransparentMesh: 1
+--- !u!114 &1083275831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083275826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09f23d5a31e83ec47aacd4364ae46ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuButtons
+  Button_Hover:
+    Guid:
+      Data1: -2093147432
+      Data2: 1334818052
+      Data3: -1467502407
+      Data4: -972598990
+    Path: event:/SFXs/UI/Button Hover
+  Button_Click:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &1783777481
 GameObject:
   m_ObjectHideFlags: 0

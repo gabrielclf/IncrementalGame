@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: "Consumo de combust\xEDveis fosseis nos transportes"
   _imagem: {fileID: 5377297249107617962, guid: 6dee15ecaba0c2d4688cbb9520fbaf0a, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 117649
   CustoOriginalUpgrade: 41943040
   CustoAtualUpgrade: 41943040
   MultiplicadorAumentoCustoPorUpgrade: 1.5

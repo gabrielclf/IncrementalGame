@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: "Salve a Mata Atl\xE2ntica"
   _imagem: {fileID: -8809403429472642422, guid: 9e84e4d6b3d31e647952a473fbf2e0d8, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 5764801
   CustoOriginalUpgrade: 2684354560
   CustoAtualUpgrade: 2684354560
   MultiplicadorAumentoCustoPorUpgrade: 1.5

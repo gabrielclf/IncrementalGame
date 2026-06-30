@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: Salve a Caatinga
   _imagem: {fileID: -258915121724769785, guid: 75409717b54cab84c83d2b5d8af2b905, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 16807
   CustoOriginalUpgrade: 20971520
   CustoAtualUpgrade: 20971520
   MultiplicadorAumentoCustoPorUpgrade: 1.5

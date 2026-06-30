@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
   TextoTituloUpgrade: "Eros\xE3o Costeira"
   _imagem: {fileID: 1226910026772746336, guid: cac15984d31114e448fe6480c5958abc, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 28561
   CustoOriginalUpgrade: 327680
   CustoAtualUpgrade: 327680
   MultiplicadorAumentoCustoPorUpgrade: 1.5

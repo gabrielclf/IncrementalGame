@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: "Queimadas na Amaz\xF4nia"
   _imagem: {fileID: -4263397644506745293, guid: 779aca87b117c134483bfabfa664dddf, type: 3}
-  QuantidadeUpgrades: 1
-  CustoOriginalUpgrade: 100
-  CustoAtualUpgrade: 100
+  QuantidadeUpgrades: 7
+  CustoOriginalUpgrade: 320
+  CustoAtualUpgrade: 320
   MultiplicadorAumentoCustoPorUpgrade: 1.5
   TextoBotaoUpgrade: "Brigadas de Inc\xEAndio "
   TextoDescricaoUpgrade: "A Brigada de Inc\xEAndio \xE9 um grupo de pessoas capacitadas

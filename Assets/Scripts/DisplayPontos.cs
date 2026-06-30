@@ -14,7 +14,7 @@ public class DisplayPontos : MonoBehaviour
             * T = trilhão
             * Q = quadri... e eu sei la
         */
-        string[] sufixos = { "", "mil", "milhões", "bilhões", "trilhões", "quadrilhões"};
+        string[] sufixos = { " ", " mil", " milhões", " bilhões", " trilhões", " quadrilhões"};
         int index = 0;
         while ((contagemPontos >= 1000) && (index < sufixos.Length - 1))
         {
@@ -28,7 +28,7 @@ public class DisplayPontos : MonoBehaviour
         string textoFormatado;
         if (index == 0)
         {
-            textoFormatado = contagemPontos.ToString();
+            textoFormatado = contagemPontos.ToString("F0");
         } else
         {
             textoFormatado = contagemPontos.ToString("F1") + sufixos[index]; //f1 apenas uma casa decial

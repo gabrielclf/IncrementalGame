@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
   TextoTituloUpgrade: "Perca de produ\xE7\xE3o Agr\xEDcola"
   _imagem: {fileID: -7594997651171027503, guid: 4124401e1fc44954c9e9720090b64c6d, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 169
   CustoOriginalUpgrade: 2560
   CustoAtualUpgrade: 2560
   MultiplicadorAumentoCustoPorUpgrade: 1.5

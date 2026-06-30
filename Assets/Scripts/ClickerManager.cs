@@ -160,7 +160,7 @@ public class ClickerManager : MonoBehaviour
     public void ClicarBotaoUpgrade(UpgradePontos upgrade, UpgradeButtons referenciaBotao, string titulo_upgrade)
     {
         //Condição de vitoria (chama)
-        if (titulo_upgrade == "SalvarBrasil")
+        if (titulo_upgrade == "Vitoria")
         {
             _upgradeCanvas.SetActive(false);
             MainGameCanvas.SetActive(false);

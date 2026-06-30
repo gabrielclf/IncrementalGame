@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
   TextoTituloUpgrade: "Salve a Amaz\xF4nia"
   _imagem: {fileID: 5511823035475730952, guid: 2cce4dc8e38055f4c931c60fc97f1252, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 13
   CustoOriginalUpgrade: 1280
   CustoAtualUpgrade: 1280
   MultiplicadorAumentoCustoPorUpgrade: 1.5

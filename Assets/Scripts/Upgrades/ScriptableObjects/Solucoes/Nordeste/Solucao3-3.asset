@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: "Refugiados clim\xE1ticos"
   _imagem: {fileID: 8617915538859294829, guid: 4c44753f96bad6e418eab4d36c011ad1, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 2401
   CustoOriginalUpgrade: 5242880
   CustoAtualUpgrade: 5242880
   MultiplicadorAumentoCustoPorUpgrade: 1.5

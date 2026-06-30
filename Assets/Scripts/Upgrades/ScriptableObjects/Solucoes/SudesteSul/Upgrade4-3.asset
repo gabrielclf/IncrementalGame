@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorSegundo
   TextoTituloUpgrade: "Falta de Educa\xE7\xE3o Ambiental"
   _imagem: {fileID: 1379202430493461581, guid: 6981dc793cd518b40b3cfb6642dc51c0, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 823543
   CustoOriginalUpgrade: 671088640
   CustoAtualUpgrade: 671088640
   MultiplicadorAumentoCustoPorUpgrade: 1.5

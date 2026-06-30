@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UpgradePorClick
   TextoTituloUpgrade: "Emiss\xE3o de Gases na produ\xE7\xE3o agropecu\xE1ria"
   _imagem: {fileID: 7289393236204641901, guid: 9065a1c4c5365834a92a7b3e3fe1262a, type: 3}
-  QuantidadeUpgrades: 1
+  QuantidadeUpgrades: 4826809
   CustoOriginalUpgrade: 167772160
   CustoAtualUpgrade: 167772160
   MultiplicadorAumentoCustoPorUpgrade: 1.5

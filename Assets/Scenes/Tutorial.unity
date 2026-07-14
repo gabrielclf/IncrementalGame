@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 143257638}
   - component: {fileID: 143257637}
   - component: {fileID: 143257636}
+  - component: {fileID: 143257639}
   m_Layer: 5
   m_Name: Janela5BotaoCont
   m_TagString: Untagged
@@ -613,6 +614,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 143257639}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 412503805}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -675,6 +688,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143257634}
   m_CullTransparentMesh: 1
+--- !u!114 &143257639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143257634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -1281604179
+      Data2: 1077800841
+      Data3: -460185695
+      Data4: -822796897
+    Path: event:/SFXs/UI/Confirm
 --- !u!1 &147925402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,6 +1225,7 @@ GameObject:
   - component: {fileID: 208068643}
   - component: {fileID: 208068642}
   - component: {fileID: 208068641}
+  - component: {fileID: 208068644}
   m_Layer: 5
   m_Name: Janela3BotaoCont
   m_TagString: Untagged
@@ -1288,6 +1321,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 208068644}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &208068642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1326,6 +1371,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208068639}
   m_CullTransparentMesh: 1
+--- !u!114 &208068644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208068639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &225869358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,6 +1796,7 @@ GameObject:
   - component: {fileID: 371490212}
   - component: {fileID: 371490211}
   - component: {fileID: 371490210}
+  - component: {fileID: 371490213}
   m_Layer: 5
   m_Name: Janela2BotaoCont
   m_TagString: Untagged
@@ -1827,6 +1892,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 371490213}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &371490211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1865,6 +1942,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371490208}
   m_CullTransparentMesh: 1
+--- !u!114 &371490213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371490208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &380116428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +1973,7 @@ GameObject:
   - component: {fileID: 380116432}
   - component: {fileID: 380116431}
   - component: {fileID: 380116430}
+  - component: {fileID: 380116433}
   m_Layer: 5
   m_Name: Janela2BotaoVoltar
   m_TagString: Untagged
@@ -1972,6 +2069,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 380116433}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &380116431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2010,6 +2119,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380116428}
   m_CullTransparentMesh: 1
+--- !u!114 &380116433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380116428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &405640827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2456,6 +2584,8 @@ GameObject:
   - component: {fileID: 681226069}
   - component: {fileID: 681226068}
   - component: {fileID: 681226071}
+  - component: {fileID: 681226073}
+  - component: {fileID: 681226072}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2581,6 +2711,51 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &681226072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681226067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -39255120
+      Data2: 1333730774
+      Data3: -2012989012
+      Data4: -1266108830
+    Path: event:/Ambiences/Map
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &681226073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681226067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &703088543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,6 +2861,7 @@ GameObject:
   - component: {fileID: 729460539}
   - component: {fileID: 729460538}
   - component: {fileID: 729460537}
+  - component: {fileID: 729460540}
   m_Layer: 5
   m_Name: Janela3BotaoVoltar
   m_TagString: Untagged
@@ -2781,6 +2957,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 729460540}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &729460538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2819,6 +3007,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 729460535}
   m_CullTransparentMesh: 1
+--- !u!114 &729460540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729460535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &768677619
 GameObject:
   m_ObjectHideFlags: 0
@@ -3187,6 +3394,7 @@ GameObject:
   - component: {fileID: 913611509}
   - component: {fileID: 913611508}
   - component: {fileID: 913611507}
+  - component: {fileID: 913611510}
   m_Layer: 5
   m_Name: Janela4BotaoCont
   m_TagString: Untagged
@@ -3282,6 +3490,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 913611510}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &913611508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3320,6 +3540,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913611505}
   m_CullTransparentMesh: 1
+--- !u!114 &913611510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913611505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &947915826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,6 +3859,7 @@ GameObject:
   - component: {fileID: 1078775403}
   - component: {fileID: 1078775402}
   - component: {fileID: 1078775401}
+  - component: {fileID: 1078775404}
   m_Layer: 5
   m_Name: Janela1BotaoCont
   m_TagString: Untagged
@@ -3715,6 +3955,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 1078775404}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1078775402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3753,6 +4005,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078775399}
   m_CullTransparentMesh: 1
+--- !u!114 &1078775404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078775399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &1187732120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,6 +4549,7 @@ GameObject:
   - component: {fileID: 1381295861}
   - component: {fileID: 1381295860}
   - component: {fileID: 1381295859}
+  - component: {fileID: 1381295862}
   m_Layer: 5
   m_Name: BotaoConfirmar
   m_TagString: Untagged
@@ -4373,6 +4645,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 1381295862}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1381295860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4411,6 +4695,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381295857}
   m_CullTransparentMesh: 1
+--- !u!114 &1381295862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381295857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &1389854353
 GameObject:
   m_ObjectHideFlags: 0
@@ -5182,6 +5485,7 @@ GameObject:
   - component: {fileID: 1604657191}
   - component: {fileID: 1604657190}
   - component: {fileID: 1604657189}
+  - component: {fileID: 1604657192}
   m_Layer: 5
   m_Name: Janela4BotaoVoltar
   m_TagString: Untagged
@@ -5277,6 +5581,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 1
+      - m_Target: {fileID: 1604657192}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1604657190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5315,6 +5631,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604657187}
   m_CullTransparentMesh: 1
+--- !u!114 &1604657192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604657187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &1607701525
 GameObject:
   m_ObjectHideFlags: 0
@@ -5501,6 +5836,7 @@ GameObject:
   - component: {fileID: 1650559762}
   - component: {fileID: 1650559761}
   - component: {fileID: 1650559760}
+  - component: {fileID: 1650559763}
   m_Layer: 5
   m_Name: BotaoNegar
   m_TagString: Untagged
@@ -5584,6 +5920,18 @@ MonoBehaviour:
           m_StringArgument: RegiaoNorte
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 1650559763}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: PlayButtonClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1650559761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5622,6 +5970,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650559758}
   m_CullTransparentMesh: 1
+--- !u!114 &1650559763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650559758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &1765813802
 GameObject:
   m_ObjectHideFlags: 0
@@ -6121,6 +6488,7 @@ GameObject:
   - component: {fileID: 1937112197}
   - component: {fileID: 1937112196}
   - component: {fileID: 1937112195}
+  - component: {fileID: 1937112198}
   m_Layer: 5
   m_Name: Janela5BotaoVoltar
   m_TagString: Untagged
@@ -6254,6 +6622,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1937112193}
   m_CullTransparentMesh: 1
+--- !u!114 &1937112198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937112193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1663622324d633a43a9ea57756f760e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonClick
+  buttonClickSound:
+    Guid:
+      Data1: -271184925
+      Data2: 1137006064
+      Data3: 1915184539
+      Data4: 450884697
+    Path: event:/SFXs/UI/Button Click
 --- !u!1 &1937418672
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,6 +24,9 @@ MonoBehaviour:
     m_path: Assets/Scenes/MainMenu.unity
     m_guid: e6e9a812414e7234897829024065c631
   - m_enabled: 1
+    m_path: Assets/Scenes/Tutorial.unity
+    m_guid: 462430a6eb75cc74b9a24e34f70277ca
+  - m_enabled: 1
     m_path: Assets/Scenes/RegiaoNorte.unity
     m_guid: 8c9cfa26abfee488c85f1582747f6a02
   - m_enabled: 1

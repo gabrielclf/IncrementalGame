@@ -7,10 +7,15 @@ using UnityEngine.SceneManagement;
 public class ClickerSceneÁudioManager : MonoBehaviour
 {   
     #region Variables
+    [Header("Variables")]
+    [SerializeField] private float ScreenCenterDistance = 1f;
+
     // referências de managers
     [Header("Code References")]
     [SerializeField] ClickerManager clickerManager;
     [SerializeField] string Scene;
+    [SerializeField] private GameObject ScreenCenter;
+    private bool Clicked = false;
     
     // Referências de Loops a serem tocados
     [Header("OSTs e Ambiences")]
@@ -18,6 +23,10 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     EventInstance GameplayOSTInstance;
     [SerializeField] EventReference MapAmbience;
     EventInstance MapAmbienceInstance;
+
+    //Referencia de Snapshots
+    [SerializeField] EventReference GameplaySnapshot;
+    [SerializeField] EventInstance GameplaySnapshotInstance;
 
     // Referencia de Sons a serem tocados;
     [Header("SFXs")]
@@ -58,7 +67,12 @@ public class ClickerSceneÁudioManager : MonoBehaviour
             }
             else
             {
-             clickerManager = FindAnyObjectByType<ClickerManager>();
+            clickerManager = FindAnyObjectByType<ClickerManager>();
+            GameObject mainCamera = GameObject.FindWithTag("MainCamera");
+            if (mainCamera != null)
+                {
+                    RuntimeManager.AttachInstanceToGameObject(MapAmbienceInstance, mainCamera);
+                }
             }
         }
 
@@ -84,8 +98,15 @@ public class ClickerSceneÁudioManager : MonoBehaviour
         clickerManager = FindAnyObjectByType<ClickerManager>();
         GameplayOSTInstance = RuntimeManager.CreateInstance(GameplayOST);
         MapAmbienceInstance = RuntimeManager.CreateInstance(MapAmbience);
+        GameObject mainCamera = GameObject.FindWithTag("MainCamera");
+        if (mainCamera != null)
+        {
+            RuntimeManager.AttachInstanceToGameObject(MapAmbienceInstance, mainCamera);
+        }
         GameplayOSTInstance.start();
         MapAmbienceInstance.start();
+        GameplaySnapshotInstance = RuntimeManager.CreateInstance(GameplaySnapshot);
+        GameplaySnapshotInstance.start();
          #endregion
     }
     void StopOSTs()
@@ -111,35 +132,103 @@ public class ClickerSceneÁudioManager : MonoBehaviour
     {
         RuntimeManager.PlayOneShot(ButtonHover);
     }
+
+    private int GetDirection()
+    {
+        if (ScreenCenter == null)
+        {
+            return 1; 
+        }
+        if (transform.position.x < (ScreenCenter.transform.position.x - ScreenCenterDistance))
+        {
+            return 0; 
+        }
+        else if (transform.position.x > (ScreenCenter.transform.position.x + ScreenCenterDistance))
+        {
+            return 1; 
+        }
+        else
+        {
+            return 0; 
+        }
+    }
+    private void setparameter(int direction)
+    {
+        //HoverInstance.setParameterByName("Menu Direction", direction);
+    }
     #endregion
 
     #region Area Click Sounds
     public void PlayNorteAreaClickSound()
     {
-        RuntimeManager.PlayOneShot(NorteAreaClickSound);
+        switch (getScene())
+        {
+            case 0:
+                if (Clicked == true)
+                {
+                    return;
+                }
+                RuntimeManager.PlayOneShot(NorteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
+            break;
+
+            case 1:
+                if (Clicked == true)
+                {
+                    return;
+                }
+                RuntimeManager.PlayOneShot(NordesteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
+            break;
+
+            case 2:
+                if (Clicked == true)
+                {
+                    return;
+                }
+                RuntimeManager.PlayOneShot(OesteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
+            break;
+
+            case 3:
+                if (Clicked == true)
+                {
+                    return;
+                }
+                RuntimeManager.PlayOneShot(SulSudesteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
+            break;
+
+            default:
+                if (Clicked == true)
+                {
+                    return;
+                }
+                RuntimeManager.PlayOneShot(NorteAreaClickSound);
+                Clicked = true;
+                StartCoroutine(clickSoundDelay());
+            break;
+        }
+    }
+    IEnumerator clickSoundDelay()
+    {
+        yield return new WaitForSeconds(0.1f);
+        Clicked = false;
     }
 
-    public void PlaySulSudesteAreaClickSound()
-    {
-        RuntimeManager.PlayOneShot(SulSudesteAreaClickSound);
-    }
-
-    public void PlayNordesteAreaClickSound()
-    {
-        RuntimeManager.PlayOneShot(NordesteAreaClickSound);
-    }
-
-    public void PlayOesteAreaClickSound()
-    {
-        RuntimeManager.PlayOneShot(OesteAreaClickSound);
-    }
+    
     #endregion
 
     float getScene()
     {
         Scene = SceneManager.GetActiveScene().name;
         if (Scene == "RegiaoNorte")
-        {
+        {   
+
             return 0;
         }
         if (Scene == "RegiaoNordeste")

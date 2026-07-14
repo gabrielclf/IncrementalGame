@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{ad0a4f98-52e8-4220-981c-76ff44d28175}">
+		<relationship name="automationTracks">
+			<destination>{9b1824e0-a570-4fa1-99e3-52e4755e40a0}</destination>
+		</relationship>
 		<relationship name="modules">
 			<destination>{3c1ff240-d6ec-42b1-adc5-520287e6ef9d}</destination>
 		</relationship>
@@ -77,8 +80,11 @@
 	</object>
 	<object class="EventMixerMaster" id="{875b8838-4e0a-4064-b355-c04fdcf1aa08}">
 		<property name="volume">
-			<value>4</value>
+			<value>10</value>
 		</property>
+		<relationship name="automators">
+			<destination>{6bd8257b-3640-4a83-b709-979f7df63ef7}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{3542b38d-8ef6-4da8-ae73-69a2d476770f}</destination>
 		</relationship>
@@ -87,6 +93,11 @@
 		</relationship>
 		<relationship name="mixer">
 			<destination>{65406d0a-0d77-4a80-9f45-cc66d6229f26}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationTrack" id="{9b1824e0-a570-4fa1-99e3-52e4755e40a0}">
+		<relationship name="automator">
+			<destination>{6bd8257b-3640-4a83-b709-979f7df63ef7}</destination>
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{3c1ff240-d6ec-42b1-adc5-520287e6ef9d}">
@@ -100,10 +111,19 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{44f024c4-9e8c-4899-a050-62ad784fabb6}" />
+	<object class="Automator" id="{6bd8257b-3640-4a83-b709-979f7df63ef7}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{3fdb431e-fd60-4304-be1f-1a29f8352746}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{3542b38d-8ef6-4da8-ae73-69a2d476770f}">
 		<relationship name="effects">
 			<destination>{7fa1eb51-ee66-4d95-a473-c0b8bb220834}</destination>
 			<destination>{1159ed00-49ea-4927-86e0-cb199caf21b4}</destination>
+			<destination>{4bbfe8d7-8758-41bc-b55a-79d2afe7b3eb}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{69c53b1a-df06-4d48-bf20-e95ab0cb5bc2}" />
@@ -117,11 +137,28 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{5f16da8a-f1b1-4ec8-83ff-28133bb8e494}" />
+	<object class="AutomationCurve" id="{3fdb431e-fd60-4304-be1f-1a29f8352746}">
+		<relationship name="parameter">
+			<destination>{a5a084f7-d96f-4b1e-860a-65c16877362c}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{edce51d2-3e6e-4d52-bcb8-da0bc63a7acf}</destination>
+			<destination>{a343f8e0-ebb9-4067-88db-db54c9883c66}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusFader" id="{7fa1eb51-ee66-4d95-a473-c0b8bb220834}" />
 	<object class="ChorusEffect" id="{1159ed00-49ea-4927-86e0-cb199caf21b4}">
 		<property name="depth">
 			<value>0</value>
 		</property>
+	</object>
+	<object class="DistortionEffect" id="{4bbfe8d7-8758-41bc-b55a-79d2afe7b3eb}">
+		<property name="level">
+			<value>0</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{6a72a39f-05d1-4a4d-a36a-c16b62b9318c}</destination>
+		</relationship>
 	</object>
 	<object class="RandomizerModulator" id="{92985cf3-3f4e-4390-9cfc-fe2e49a54051}">
 		<property name="nameOfPropertyBeingModulated">
@@ -137,6 +174,30 @@
 		</property>
 		<property name="amount">
 			<value>4.5</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{edce51d2-3e6e-4d52-bcb8-da0bc63a7acf}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>3</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{a343f8e0-ebb9-4067-88db-db54c9883c66}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>-1</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{6a72a39f-05d1-4a4d-a36a-c16b62b9318c}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>level</value>
+		</property>
+		<property name="amount">
+			<value>20</value>
 		</property>
 	</object>
 </objects>

@@ -547,7 +547,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &364820372
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1388,6 +1388,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02bfeacead19cfd428952ca4fffa87bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioSettings
+  SFXtestEventRef:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  MusictestEventRef:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  AmbiencetestEventRef:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  VOtestEventRef:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  MastertestEventRef:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1250363147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2131,13 +2166,6 @@ MonoBehaviour:
       Data3: -404957266
       Data4: 626311105
     Path: event:/OSTs/Tela Inicial
-  GameplaySnapshot:
-    Guid:
-      Data1: 1615461623
-      Data2: 1283078398
-      Data3: -208297855
-      Data4: 592975603
-    Path: event:/Snapshots/Game State
 --- !u!4 &1578500999
 Transform:
   m_ObjectHideFlags: 0
@@ -2975,7 +3003,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: RegiaoNorte
+          m_StringArgument: Tutorial
           m_BoolArgument: 0
         m_CallState: 1
       - m_Target: {fileID: 2144735543}
